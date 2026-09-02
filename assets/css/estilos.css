@@ -211,14 +211,15 @@ p{margin:0 0 18px}
 .lang_switch .sep{color:var(--borde)}
 .lang_switch a{color:var(--beige-muted);padding:8px 2px}
 .lang_switch a:hover{color:var(--malva)}
+/* dos renglones fijos: el nombre arriba, la bajada abajo, ninguno se parte */
 .q_logo a{
-  display:block;
+  display:block;white-space:nowrap;
   font-family:'Fraunces',serif;font-size:27px;line-height:1;font-weight:500;
   letter-spacing:-.5px;color:var(--beige);
 }
 .q_logo a:hover{color:var(--malva)}
 .q_logo .claim{
-  display:block;margin-top:5px;
+  display:block;margin-top:5px;white-space:nowrap;
   font-family:'Poppins',sans-serif;font-size:10px;line-height:1;font-weight:400;
   letter-spacing:2.4px;text-transform:uppercase;color:var(--beige-muted);
 }
@@ -294,6 +295,8 @@ nav.mobile_menu.open{display:block}
   position:relative;transition:color .2s ease;
 }
 .filter_holder li a{color:inherit;display:block}
+/* la etiqueta corta solo existe en móvil */
+.lbl_corto{display:none}
 .filter_holder li::after{
   content:'';position:absolute;left:0;bottom:2px;width:0;height:1px;
   background:var(--malva);transition:width .3s ease;
@@ -457,7 +460,9 @@ footer{padding:0 .7%}
 @media (max-width:1000px){
   nav.main_menu{display:none}
   .mobile_menu_button{display:flex}
-  .header_inner{height:80px}
+  /* sin el menú central quedan dos columnas: si se dejaran las tres, la
+     tercera (vacía) empujaría los botones lejos del borde derecho */
+  .header_inner{height:80px;grid-template-columns:1fr auto}
   .contact_section{scroll-margin-top:95px}
   h1{font-size:40px;line-height:46px}
   h2{font-size:26px;line-height:34px}
@@ -486,17 +491,22 @@ footer{padding:0 .7%}
   .portfolio-item .feature_holder_icons{display:none}
   .portfolio-item .portfolio_title{font-size:14px;line-height:20px}
 
-  /* las categorías pasan a fila con desplazamiento lateral: siempre en un
-     renglón, sin romper la retícula, y con área de toque de 44px */
+  /* las 6 categorías ocupan el ancho completo en dos filas de tres,
+     con área de toque de 44px de alto */
   .filter_holder{padding-bottom:34px}
   .filter_holder ul{
-    flex-wrap:nowrap;justify-content:flex-start;gap:0 8px;
-    overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;
-    margin:0 -20px;padding:0 20px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:6px 10px;
   }
-  .filter_holder ul::-webkit-scrollbar{display:none}
-  .filter_holder li{flex:none}
-  .filter_holder li a{padding:7px 2px;min-height:40px;display:flex;align-items:center}
+  .filter_holder li{font-size:13px;line-height:18px}
+  .filter_holder li a{
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    min-height:44px;padding:4px;
+  }
+  .filter_holder li::after{display:none}
+  .filter_holder li.current a{border-bottom:1px solid var(--malva)}
+  /* etiqueta corta: "Redes Sociales" no entra en un tercio de pantalla */
+  .lbl_full{display:none}
+  .lbl_corto{display:inline}
 
   .category_section{padding-top:44px}
   .category_intro{margin-bottom:32px}
