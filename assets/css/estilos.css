@@ -149,7 +149,8 @@
   --texto:var(--beige);
   --borde:#2c2c2c;
   --footer-bg:#121a15;
-  --radio:14px;   /* redondeo de las imágenes: portfolio y retrato */
+  --radio:14px;      /* redondeo de las imágenes: portfolio y retrato */
+  --radio-btn:8px;   /* redondeo de todo lo que sea botón o recuadro */
 }
 *{box-sizing:border-box}
 html{
@@ -279,6 +280,7 @@ nav.mobile_menu.open{display:block}
   margin-top:45px;
   padding:0 27px;height:43px;line-height:41px;
   border:1px solid var(--beige);
+  border-radius:var(--radio-btn);
   color:var(--beige);
   font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;
   transition:background-color .2s ease,color .2s ease,border-color .2s ease;
@@ -498,12 +500,16 @@ footer{padding:0 .7%}
     display:grid;grid-template-columns:repeat(3,1fr);gap:6px 10px;
   }
   .filter_holder li{font-size:13px;line-height:18px}
+  /* cada categoría dentro de un recuadro de trazo simple: 1px, que es el
+     grosor del asta de la letra a este cuerpo, y `currentColor` para que la
+     línea sea siempre del mismo color que el texto, activo o no */
   .filter_holder li a{
     display:flex;align-items:center;justify-content:center;text-align:center;
-    min-height:44px;padding:4px;
+    min-height:44px;padding:4px 6px;
+    border:1px solid currentColor;
+    border-radius:var(--radio-btn);
   }
   .filter_holder li::after{display:none}
-  .filter_holder li.current a{border-bottom:1px solid var(--malva)}
   /* etiqueta corta: "Redes Sociales" no entra en un tercio de pantalla */
   .lbl_full{display:none}
   .lbl_corto{display:inline}
