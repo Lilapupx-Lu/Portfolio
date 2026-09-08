@@ -175,7 +175,8 @@ img{max-width:100%;display:block}
 a{color:var(--verde);text-decoration:none;transition:color .2s ease}
 a:hover{color:var(--malva)}
 :focus-visible{outline:2px solid var(--beige);outline-offset:3px}
-h1,h2,h3,h5{margin:0}
+h1,h2,h5{margin:0}
+h3{margin: bottom 15px;}
 h1{font-family:'Fraunces',serif;font-size:52px;line-height:57px;font-weight:500;letter-spacing:-.5px;color:var(--beige)}
 h2{font-family:'Poppins',sans-serif;font-size:32px;line-height:40px;font-weight:400;color:var(--verde-h2)}
 h5{font-family:'Poppins',sans-serif;font-size:18px;line-height:24px;font-weight:400;color:var(--beige)}
@@ -479,9 +480,9 @@ footer{padding:0 .7%}
   /* cuerpo un punto más grande y más aire entre líneas: en pantalla chica
      y a distancia de brazo, 15/26 se lee apretado */
   body{font-size:16px;line-height:28px}
-  .section_inner,.wide_inner{padding:0 0px}
+  .section_inner,.wide_inner{padding:0 20px}
 
-  h1{font-size:34px;line-height:41px}
+  h1{font-size:34px;line-height:41px;}
   h2{font-size:24px;line-height:32px}
   .hero{padding:48px 0 42px}
   .hero p{margin-top:22px}
