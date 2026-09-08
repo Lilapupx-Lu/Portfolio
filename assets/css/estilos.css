@@ -479,7 +479,7 @@ footer{padding:0 .7%}
   /* cuerpo un punto más grande y más aire entre líneas: en pantalla chica
      y a distancia de brazo, 15/26 se lee apretado */
   body{font-size:16px;line-height:28px}
-  .section_inner,.wide_inner{padding:0 20px}
+  .section_inner,.wide_inner{padding:0 0px}
 
   h1{font-size:34px;line-height:41px}
   h2{font-size:24px;line-height:32px}
