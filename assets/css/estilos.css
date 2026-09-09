@@ -193,13 +193,13 @@ p{margin:0 0 18px}
    quedándose pegadas arriba y tapando el menú. */
 #site_header{
   position:sticky;top:0;z-index:200;
-  background:var(--negro);
+  background:var(--beige);
   color:var(--negro);
   padding:0 .7%;
   transition:border-color .3s ease;
   border-bottom:1px solid transparent;
 }
-#site_header.scrolled{border-bottom-color:var(--borde)}
+#site_header.scrolled{border-bottom-color:var(--vino)}
 /* grid de 3 columnas: el menú queda centrado de verdad, sin importar
    qué ancho tenga el logo ni qué haya a la derecha */
 .header_inner{
@@ -233,7 +233,7 @@ nav.main_menu > ul{list-style:none;margin:0;padding:0;display:flex;align-items:c
 nav.main_menu > ul > li{position:relative}
 nav.main_menu > ul > li > a{
   display:block;padding:0 16px;line-height:100px;
-  font-family:'Poppins',sans-serif;font-size:18px;color:var(--negro);
+  font-family:'Poppins',sans-serif;font-size:18px;color:var(--vino);
 }
 nav.main_menu > ul > li > a:hover,
 nav.main_menu > ul > li > a.current{color:var(--vino)}
@@ -261,7 +261,7 @@ nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
   display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--negro);
   width:44px;height:44px;align-items:center;justify-content:center;
 }
-.mobile_menu_button svg{width:22px;height:22px;fill:var(--negro)}
+.mobile_menu_button svg{width:22px;height:22px;fill:var(--vino)}
 nav.mobile_menu{
   display:none;border-top:1px solid var(--borde);padding:6px 0 20px;
   /* si el menú no entra en pantalla, se desplaza solo y no arrastra la página */
@@ -274,14 +274,14 @@ nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
 .seccion-servicios{margin:0;padding:0 20px 40px 20px}
-.portfolio-section-h2{color: var(--negro):center;margin: 20px 0 20px 0;background-color: var(--vino);border-radius: var(--radio); padding: 0 20px 0 20px;}
+.portfolio-section-h2{color: white;text-align:center;margin: 20px 0 20px 0;background-color: var(--vino);border-radius: var(--radio); padding: 0 20px 0 20px;}
 .trabajos{margin:0;padding:0}
 hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);height: 2px;border: none}
 .section{padding:0 .7%}
 .section_inner{max-width:1100px;margin:0 auto;padding:0 15px}
 .wide_inner{max-width:1300px;margin:0 auto;padding:0 15px}
 
-.hero{text-align:center;padding:90px 0 70px}
+.hero{text-align:center;padding:60px 0 60px}
 .hero p{max-width:830px;margin:30px auto 0;color:var(--negro)}
 .hero2 p {max-width:830px;margin-top:22px auto 0;color:var(--negro)}
 .qbutton{
@@ -290,13 +290,13 @@ hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);hei
   padding:0 27px;height:43px;line-height:41px;
   border:1px solid var(--negro);
   border-radius:var(--radio-btn);
-  color:var(--negro);
+  color:white;
   font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;
   transition:background-color .2s ease,color .2s ease,border-color .2s ease;
 }
-.qbutton:hover{background:var(--negro);color:var(--negro)}
+.qbutton:hover{background:var(--negro);color:var(--vino)}
 /* el icono hereda el color del texto: negro normal, negro al invertirse en hover */
-.qbutton svg{width:16px;height:16px;fill:currentColor;flex:none}
+.qbutton svg{width:16px;height:16px;fill:white;flex:none}
 
 /* ---------- filtros ---------- */
 .filter_holder{text-align:center;padding:0 0 45px}
@@ -360,16 +360,16 @@ hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);hei
 /* ---------- contacto ---------- */
 /* el header es sticky (100px): este margen evita que tape el título al saltar al ancla */
 .contact_section{text-align:center;padding:60px 0 40px;scroll-margin-top:120px}
-.contact_section h2{margin-bottom:32px}
+.contact_section h2{margin-bottom:32px; color:white;}
 .contact_section p{max-width:800px;margin-left:auto;margin-right:auto}
 .contact_section strong{font-weight:600}
 /* iconos de contacto, mismo tamaño y color que los del pie */
 .contact_social{display:flex;justify-content:center;gap:26px;margin-top:30px}
-.contact_social svg{width:25px;height:25px;fill:var(--negro)}
-.contact_social a:hover svg{fill:var(--vino)}
+.contact_social svg{width:25px;height:25px;fill:var(--beige)}
+.contact_social a:hover svg{fill:var(--negro)}
 
 /* ---------- footer ---------- */
-footer{padding:0 .7%}
+footer{padding:0}
 .footer_top_holder{background:none;color:white}
 .footer_top{max-width:1300px;margin:0 auto;padding:60px 15px 45px;text-align:center}
 .footer_top p,.footer_top h5{color:var(--negro)}
@@ -396,22 +396,22 @@ footer{padding:0 .7%}
 .footer_social svg{width:25px;height:25px;fill:var(--negro)}
 .footer_social a:hover svg{fill:var(--vino)}
 
-.footer_bottom_holder{background:var(--negro);width: 100%;}
+.footer_bottom_holder{background:var(--negro); width: 100%;;}
 .footer_bottom_border{height:1px;background:var(--negro);opacity:.22}
 /* copyright: un solo renglón centrado */
-.footer_bottom{max-width:1300px;margin:0 auto;padding:20px 15px;color:var(--negro);text-align:center}
-.footer_bottom p{margin:0;font-size:14px;line-height:22px;color:var(--negro)}
+.footer_bottom{max-width:1300px;margin:0 auto;padding:20px 15px;color:var(--vino);text-align:center}
+.footer_bottom p{margin:0;font-size:14px;line-height:22px;color:var(--vino)}
 
 #back_to_top{
   position:fixed;right:25px;bottom:25px;z-index:150;
   width:44px;height:44px;border-radius:50%;
-  background:var(--negro);color:var(--negro);
+  background:white;color:var(--negro);
   display:flex;align-items:center;justify-content:center;
   opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s,background-color .2s ease;
 }
 #back_to_top.on{opacity:1;visibility:visible}
 #back_to_top:hover{background:var(--vino);color:white}
-#back_to_top svg{width:16px;height:16px;fill:currentColor}
+#back_to_top svg{width:16px;height:16px;fill:var(--vino)}
 
 /* ---------- página de categoría ---------- */
 .category_section{padding-top:70px}
