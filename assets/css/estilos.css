@@ -167,12 +167,12 @@ body{
 }
 
 main{
-  background:white;margin: 0 18px 0 18px;border-radius: 0 0 var(--radio) var(--radio);
+  background:white;margin: 0 40px 0 40px;border-radius:var(--radio);
 }
 
 ::selection{background:var(--negro);color:var(--negro)}
 img{max-width:100%;display:block}
-a{color:var(--negro);text-decoration:none;transition:color .2s ease}
+a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s ease;}
 a:hover{color:var(--vino)}
 :focus-visible{outline:2px solid var(--vino);outline-offset:3px}
 h1,h2,h5{margin:0}
@@ -233,7 +233,7 @@ nav.main_menu > ul{list-style:none;margin:0;padding:0;display:flex;align-items:c
 nav.main_menu > ul > li{position:relative}
 nav.main_menu > ul > li > a{
   display:block;padding:0 16px;line-height:100px;
-  font-family:'Poppins',sans-serif;font-size:18px;color:var(--vino);
+  font-family:'Poppins',sans-serif;font-size:18px;color:var(--negro);
 }
 nav.main_menu > ul > li > a:hover,
 nav.main_menu > ul > li > a.current{color:var(--vino)}
@@ -241,7 +241,6 @@ nav.main_menu li ul{
   list-style:none;margin:0;padding:8px 0;
   position:absolute;top:100%;left:0;min-width:230px;
   background:var(--negro);
-  border:1px solid var(--borde);
   opacity:0;visibility:hidden;transform:translateY(6px);
   transition:opacity .25s ease,transform .25s ease,visibility .25s;
 }
@@ -288,7 +287,7 @@ hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);hei
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
   margin-top:0px;
   padding:0 27px;height:43px;line-height:41px;
-  border:1px solid var(--negro);
+  border:2px solid white;
   border-radius:var(--radio-btn);
   color:white;
   font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;
