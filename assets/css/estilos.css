@@ -173,6 +173,7 @@ main{
 ::selection{background:var(--negro);color:var(--negro)}
 img{max-width:100%;display:block}
 .excepciones{color:white;text-decoration:none;transition:color .2s ease;}
+.excepciones:hover{color:var(--negro)}
 a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s ease;}
 a:hover{color:var(--vino)}
 :focus-visible{outline:2px solid var(--vino);outline-offset:3px}
@@ -275,9 +276,8 @@ nav.mobile_menu.open{display:block}
 /* ---------- secciones ---------- */
 .seccion-servicios{margin:0;padding:0 20px 40px 20px}
 .portfolio-section-h2{
-  color: white;text-align:center;margin: 20px 0 20px 0;background-color: var(--vino);
-  border-radius: var(--radio); padding: 0 20px 0 20px;
-  font-family:'Fraunces',serif;font: size 48px;px;font-weight:500}
+  color: white;text-align:center;margin-left:250px;margin-right:250px;background-color: var(--vino);
+  border-radius: var(--radio);font-family:'Fraunces',serif;font: size 48px;px;font-weight:500}
 .trabajos{margin:0;padding:0}
 hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);height: 2px;border: none}
 .section{padding:0 .7%}
