@@ -138,13 +138,13 @@
   Nada por debajo de 4.5:1, ni en texto ni en bordes de botón (3:1).
 */
 :root{
-  --negro:#0b0b0b;
+  --negro:#100701;
   --negro-2:#161616;
   --beige:#e8dcc8;
   --beige-muted:#b8ac98;
   --verde:#9dbfac;
   --verde-h2:#9dbfac;
-  --vino:#8d1d34;
+  --vino:#e74f1c;
   --gris:var(--beige-muted);
   --texto:var(--beige);
   --borde:#2c2c2c;
@@ -164,12 +164,22 @@ body{
   font-size:15px;
   line-height:26px;
   color:var(--beige);
-  background: linear-gradient var(--negro);
+  background:linear-gradient (var(--beige)100%, var(--vino)100%);
   -webkit-font-smoothing:antialiased;
   /* ninguna palabra larga (un email, una URL) puede desbordar a lo ancho */
   overflow-wrap:break-word;
   overflow-x:hidden;
 }
+
+main{
+  background:white;margin: 0 18px 0 18px;
+}
+
+header{
+  background:white;
+  color:var(--negro);
+}
+
 ::selection{background:var(--beige);color:var(--negro)}
 img{max-width:100%;display:block}
 a{color:var(--verde);text-decoration:none;transition:color .2s ease}
@@ -260,7 +270,7 @@ nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
   display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--verde);
   width:44px;height:44px;align-items:center;justify-content:center;
 }
-.mobile_menu_button svg{width:22px;height:22px;fill:currentColor}
+.mobile_menu_button svg{width:22px;height:22px;fill:var(--negro)}
 nav.mobile_menu{
   display:none;border-top:1px solid var(--borde);padding:6px 0 20px;
   /* si el menú no entra en pantalla, se desplaza solo y no arrastra la página */
