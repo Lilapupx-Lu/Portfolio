@@ -272,6 +272,7 @@ nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px
 nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
+.seccion-servicios{margin:0;padding:0 20px 0 20px}
 .portfolio-section-h2{text-align:center;margin-bottom: 20px;}
 .trabajos{margin:0;padding:0}
 hr{margin:40px 0 20px 0; max-width: 60%;}
