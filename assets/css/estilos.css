@@ -164,7 +164,7 @@ body{
   font-size:15px;
   line-height:26px;
   color:var(--beige);
-  background:linear-gradient (var(--beige)100%, var(--vino)100%);
+  background:linear-gradient(var(--beige)100%, var(--vino)100%);
   -webkit-font-smoothing:antialiased;
   /* ninguna palabra larga (un email, una URL) puede desbordar a lo ancho */
   overflow-wrap:break-word;
@@ -473,7 +473,6 @@ footer{padding:0 .7%}
   .projects_holder.limit_rows .portfolio-item:nth-of-type(n+10){display:none}
 }
 @media (max-width:1000px){
-  nav.main_menu{display:none}
   .mobile_menu_button{display:flex}
   /* sin el menú central quedan dos columnas: si se dejaran las tres, la
      tercera (vacía) empujaría los botones lejos del borde derecho */
@@ -493,7 +492,7 @@ footer{padding:0 .7%}
      y a distancia de brazo, 15/26 se lee apretado */
   body{font-size:16px;line-height:28px}
   .section_inner,.wide_inner{padding:0 20px}
-
+  nav.main_menu{display:none}
   h1{font-size:34px;line-height:41px;}
   h2{font-size:24px;line-height:32px}
   .hero{padding:48px 0 42px}
