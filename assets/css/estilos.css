@@ -487,6 +487,7 @@ footer{padding:0 .7%}
   .hero p{margin-top:22px}
   .hero2 p{margin-top:22px}
   .qbutton{margin-top:34px}
+  .Header_Text{display:none}
 
   .projects_holder{grid-template-columns:repeat(2,1fr);gap:14px}
   .projects_holder.limit_rows .portfolio-item:nth-of-type(n+7){display:none}
