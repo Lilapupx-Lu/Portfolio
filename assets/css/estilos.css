@@ -276,7 +276,7 @@ nav.mobile_menu.open{display:block}
 /* ---------- secciones ---------- */
 .seccion-servicios{margin:0;padding:0 20px 40px 20px}
 .portfolio-section-h2{
-  color: white;text-align:center;margin-left:250px;margin-right:250px;background-color: var(--vino);
+  color: white;text-align:center;margin:20px 250px 20px 250px;background-color: var(--vino);
   border-radius: var(--radio);font-family:'Fraunces',serif;font: size 48px;px;font-weight:500}
 .trabajos{margin:0;padding:0}
 hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);height: 2px;border: none}
@@ -495,6 +495,8 @@ footer{padding:0}
   .hero2 p{margin-top:22px}
   .qbutton{margin-top:34px}
   .Header_Text{display:none}
+
+  .portfolio-section-h2{margin:20px 125px 20px 125px;}
 
   .projects_holder{grid-template-columns:repeat(2,1fr);gap:14px}
   .projects_holder.limit_rows .portfolio-item:nth-of-type(n+7){display:none}
