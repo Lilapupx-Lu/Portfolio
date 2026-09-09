@@ -318,7 +318,6 @@ hr{margin:40px 0 40px 0}
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:20px;
-  padding-bottom:50px;
 }
 /* overflow:hidden + border-radius recortan también el overlay del hover */
 .portfolio-item{position:relative;overflow:hidden;background:var(--negro-2);border-radius:var(--radio)}
