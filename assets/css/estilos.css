@@ -206,11 +206,11 @@ p{margin:0 0 18px}
   height:100px;
   display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;
 }
-.q_logo{justify-self:start}
+.q_logo{justify-self:start; margin-left: 18px}
 .header_actions{justify-self:end;display:flex;align-items:center;gap:14px}
 
 /* conmutador de idioma: el activo en beige, el otro apagado */
-.lang_switch{display:flex;align-items:center;gap:5px;font-size:13px;letter-spacing:1px}
+.lang_switch{display:flex;align-items:center;gap:5px;font-size:13px;letter-spacing:1px; margin-right: 18px;}
 .lang_switch .on{color:var(--beige);font-weight:500}
 .lang_switch .sep{color:var(--borde)}
 .lang_switch a{color:var(--beige-muted);padding:8px 2px}
