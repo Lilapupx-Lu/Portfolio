@@ -205,7 +205,7 @@ p{margin:0 0 18px}
    qué ancho tenga el logo ni qué haya a la derecha */
 .header_inner{
   max-width:1300px;margin:0 auto;
-  height:80px;
+  height:100px;
   display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;
 }
 .q_logo{justify-self:start; margin-left: 18px}
