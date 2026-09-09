@@ -458,7 +458,7 @@ footer{padding:0 .7%}
 
 /* ---------- responsive ---------- */
 @media (max-width:1200px){
-  .projects_holder{grid-template-columns:repeat(3,1fr)}
+  .projects_holder{grid-template-columns:repeat(4,1fr)}
   .projects_holder.limit_rows .portfolio-item:nth-of-type(n+10){display:none}
 }
 @media (max-width:1000px){
