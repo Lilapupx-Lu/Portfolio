@@ -272,6 +272,8 @@ nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px
 nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
+.trabajos{margin:0;padding:0}
+hr{margin:40px 0 40px 0}
 .section{padding:0 .7%}
 .section_inner{max-width:1100px;margin:0 auto;padding:0 15px}
 .wide_inner{max-width:1300px;margin:0 auto;padding:0 15px}
