@@ -277,7 +277,7 @@ nav.mobile_menu.open{display:block}
 .portfolio-section-h2{
   color: white;text-align:center;margin: 20px 0 20px 0;background-color: var(--vino);
   border-radius: var(--radio); padding: 0 20px 0 20px;
-  font-family:'Fraunces',serif;font: size 32px;px;font-weight:500}
+  font-family:'Fraunces',serif;font: size 48px;px;font-weight:500}
 .trabajos{margin:0;padding:0}
 hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);height: 2px;border: none}
 .section{padding:0 .7%}
