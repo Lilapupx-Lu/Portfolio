@@ -319,10 +319,6 @@ nav.mobile_menu.open{display:block}
 .portfolio-item{position:relative;overflow:hidden;background:var(--negro-2);border-radius:var(--radio)}
 .portfolio-item img{border-radius:var(--radio)}
 .portfolio-item.hidden{display:none}
-/* Pestaña "Todo": solo 3 filas. El corte se recalcula en cada breakpoint
-   (4 col = 12 piezas, 3 col = 9, 2 col = 6, 1 col = 3) para que siempre
-   sean 3 filas exactas y no queden huecos. Los demás filtros no se limitan. */
-.projects_holder.limit_rows .portfolio-item:nth-of-type(n+13){display:none}
 .portfolio-item .image_holder{display:block;position:relative;padding-top:100%}
 .portfolio-item img{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
