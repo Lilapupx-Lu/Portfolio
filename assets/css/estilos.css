@@ -205,7 +205,7 @@ p{margin:0 0 18px}
    qué ancho tenga el logo ni qué haya a la derecha */
 .header_inner{
   max-width:1300px;margin:0 auto;
-  height:100px;
+  height:80px;
   display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;
 }
 .q_logo{justify-self:start; margin-left: 18px}
@@ -480,6 +480,7 @@ footer{padding:0}
 @media (max-width:768px){
   /* cuerpo un punto más grande y más aire entre líneas: en pantalla chica
      y a distancia de brazo, 15/26 se lee apretado */
+  main{background:white;margin: 0 15px 0 15px;border-radius:var(--radio);}
   body{font-size:16px;line-height:28px}
   .mobile_menu_button{display:flex}
   .section_inner,.wide_inner{padding:0 20px}
