@@ -281,7 +281,7 @@ hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);hei
 .section_inner{max-width:1100px;margin:0 auto;padding:0 15px}
 .wide_inner{max-width:1300px;margin:0 auto;padding:0 15px}
 
-.hero{text-align:center;padding:60px 0 60px}
+.hero{text-align:center;padding:60px 0 20px}
 .hero p{max-width:830px;margin:30px auto 0;color:var(--negro)}
 .hero2 p {max-width:830px;margin-top:22px auto 0;color:var(--negro)}
 .qbutton{
