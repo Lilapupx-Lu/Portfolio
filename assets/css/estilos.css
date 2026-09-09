@@ -164,7 +164,7 @@ body{
   font-size:15px;
   line-height:26px;
   color:var(--beige);
-  background:linear-gradient(var(--beige)100%, var(--vino)100%);
+  background: linear-gradient(var(--beige) 0%, var(--vino) 100%);
   -webkit-font-smoothing:antialiased;
   /* ninguna palabra larga (un email, una URL) puede desbordar a lo ancho */
   overflow-wrap:break-word;
@@ -173,11 +173,6 @@ body{
 
 main{
   background:white;margin: 0 18px 0 18px;
-}
-
-header{
-  background:white;
-  color:var(--negro);
 }
 
 ::selection{background:var(--beige);color:var(--negro)}
@@ -203,7 +198,8 @@ p{margin:0 0 18px}
    quedándose pegadas arriba y tapando el menú. */
 #site_header{
   position:sticky;top:0;z-index:200;
-  background:var(--negro);
+  background:white;
+  color:var(--negro);
   padding:0 .7%;
   transition:border-color .3s ease;
   border-bottom:1px solid transparent;
