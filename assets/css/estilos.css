@@ -140,11 +140,11 @@
 :root{
   --negro:#100701;
   --negro-2:#161616;
-  --beige:#e8dcc8;
+  --beige:#fde4cd;
   --beige-muted:#b8ac98;
   --verde:#9dbfac;
   --verde-h2:#9dbfac;
-  --vino:#e74f1c;
+  --vino:#ec621c;
   --gris:var(--beige-muted);
   --texto:var(--beige);
   --borde:#2c2c2c;
@@ -172,7 +172,7 @@ body{
 }
 
 main{
-  background:white;margin: 0 18px 0 18px;
+  background:var(--beige);margin: 0 18px 0 18px;
 }
 
 ::selection{background:var(--beige);color:var(--negro)}
@@ -198,7 +198,7 @@ p{margin:0 0 18px}
    quedándose pegadas arriba y tapando el menú. */
 #site_header{
   position:sticky;top:0;z-index:200;
-  background:white;
+  background:var(--beige);
   color:var(--negro);
   padding:0 .7%;
   transition:border-color .3s ease;
@@ -375,7 +375,7 @@ hr{margin:40px auto 20px auto; max-width: 60%;}
 
 /* ---------- footer ---------- */
 footer{padding:0 .7%}
-.footer_top_holder{background:var(--footer-bg);color:var(--beige)}
+.footer_top_holder{background:var(--vino);color:var(--beige)}
 .footer_top{max-width:1300px;margin:0 auto;padding:60px 15px 45px;text-align:center}
 .footer_top p,.footer_top h5{color:var(--beige)}
 .footer_top a{color:var(--verde)}
@@ -401,7 +401,7 @@ footer{padding:0 .7%}
 .footer_social svg{width:25px;height:25px;fill:var(--beige)}
 .footer_social a:hover svg{fill:var(--vino)}
 
-.footer_bottom_holder{background:var(--footer-bg)}
+.footer_bottom_holder{background:var(--vino)}
 .footer_bottom_border{height:1px;background:var(--beige);opacity:.22}
 /* copyright: un solo renglón centrado */
 .footer_bottom{max-width:1300px;margin:0 auto;padding:20px 15px;color:var(--beige);text-align:center}
