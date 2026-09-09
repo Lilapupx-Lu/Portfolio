@@ -164,7 +164,7 @@ body{
   font-size:15px;
   line-height:26px;
   color:var(--beige);
-  background: linear-gradient(var(--beige) 0%, var(--vino) 100%);
+  background: linear-gradient(var(--beige), var(--vino));
   -webkit-font-smoothing:antialiased;
   /* ninguna palabra larga (un email, una URL) puede desbordar a lo ancho */
   overflow-wrap:break-word;
