@@ -469,7 +469,7 @@ footer{padding:0}
 @media (max-width:1000px){
   /* sin el menú central quedan dos columnas: si se dejaran las tres, la
      tercera (vacía) empujaría los botones lejos del borde derecho */
-  .header_inner{height:80px;grid-template-columns:1fr auto}
+  .header_inner{height:80px;grid-template-columns:1fr auto auto; align-items: center; gap: 20px;}
   .contact_section{scroll-margin-top:95px}
   h1{font-size:40px;line-height:46px}
   h2{font-size:26px;line-height:34px}
@@ -560,11 +560,5 @@ footer{padding:0}
 
 /* márgenes de seguridad en teléfonos con muesca, en horizontal */
 @supports (padding:max(0px)){
-  @media (max-width:1000px){
-    #site_header,.section,footer{
-      padding-left:max(.7%,env(safe-area-inset-left));
-      padding-right:max(.7%,env(safe-area-inset-right));
-    }
-    #back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}
-  }
+  @media (max-width:1000px){#back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}}
 }
