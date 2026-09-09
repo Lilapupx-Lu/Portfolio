@@ -235,7 +235,7 @@ nav.main_menu > ul{list-style:none;margin:0;padding:0;display:flex;align-items:c
 nav.main_menu > ul > li{position:relative}
 nav.main_menu > ul > li > a{
   display:block;padding:0 16px;line-height:80px;
-  font-family:'Poppins',sans-serif;font-size:18px;color:white;
+  font-family:'Poppins',sans-serif;font-size:18px;color:var(--negro);
 }
 nav.main_menu > ul > li > a:hover,
 nav.main_menu > ul > li > a.current{color:var(--vino)}
@@ -249,7 +249,7 @@ nav.main_menu li ul{
 nav.main_menu li:hover > ul{opacity:1;visibility:visible;transform:translateY(0)}
 nav.main_menu li ul li{position:relative}
 nav.main_menu li ul li a{
-  display:block;padding:8px 20px;color:var(--negro);font-size:14px;line-height:20px;
+  display:block;padding:8px 20px;color:white;font-size:14px;line-height:20px;
 }
 nav.main_menu li ul li a:hover{color:var(--vino)}
 nav.main_menu li ul ul{top:0;left:100%}
@@ -259,7 +259,7 @@ nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
 
 /* 44px de lado: el mínimo cómodo para tocar con el pulgar */
 .mobile_menu_button{
-  display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--negro);
+  display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--vino);
   width:44px;height:44px;align-items:center;justify-content:center;
 }
 .mobile_menu_button svg{width:22px;height:22px;fill:var(--vino)}
@@ -270,7 +270,7 @@ nav.mobile_menu{
 }
 nav.mobile_menu ul{list-style:none;margin:0;padding:0}
 nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:var(--negro);border-bottom:1px solid var(--borde)}
-nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--negro)}
+nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--vino)}
 nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
@@ -478,7 +478,7 @@ footer{padding:0}
   .about_photo{position:static;max-width:340px;height:auto;display:block}
   .about_photo img{aspect-ratio:3/4;height:auto}
   .about_section{padding:55px 0 65px}
-  .portfolio-section-h2{margin:20px 120px 20px 120px;}
+  .portfolio-section-h2{margin:20px 60px 20px 60px;}
 }
 /* ---------- lectura en teléfono ---------- */
 @media (max-width:768px){
