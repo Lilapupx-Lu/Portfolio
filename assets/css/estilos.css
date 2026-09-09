@@ -274,7 +274,7 @@ nav.mobile_menu.open{display:block}
 /* ---------- secciones ---------- */
 .portfolio-section-h2{text-align:center;margin-bottom: 20px;}
 .trabajos{margin:0;padding:0}
-hr{margin:40px 0 20px 0}
+hr{margin:40px 0 20px 0; max-width: 60%;}
 .section{padding:0 .7%}
 .section_inner{max-width:1100px;margin:0 auto;padding:0 15px}
 .wide_inner{max-width:1300px;margin:0 auto;padding:0 15px}
