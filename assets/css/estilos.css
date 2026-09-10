@@ -426,25 +426,24 @@ footer{padding:0}
 .category_intro p:last-child{margin-bottom:0}
 
 /* ---------- página "Sobre mí" ---------- */
-.about_section{padding:80px 0 90px}
+.about_section{padding:40px 0 60px}
 .about_grid{
-  display:grid;grid-template-columns:minmax(260px,360px) 1fr;
-  gap:70px;align-items:start;
+  display:grid;grid-template-columns:2fr 3fr;
+  gap:60px;align-items:start;
 }
 /* el retrato ocupa el alto de la pantalla (menos el header pegajoso) y
    queda fijo acompañando el scroll mientras el texto avanza al lado */
 .about_photo{
-  position:sticky;top:115px;margin:0;
-  height:calc(100vh - 145px);
-  display:flex;flex-direction:column;
+  position:sticky;top:115px;margin:0; height:auto; width: 100%;max-width: 
+  360px;min-width: 120px;display:flex;flex-direction:column;
 }
 .about_photo img{
   width:100%;flex:1;min-height:0;object-fit:cover;object-position:center 22%;
   border-radius:var(--radio);
 }
 .about_photo figcaption{
-  margin-top:16px;font-size:12px;line-height:20px;letter-spacing:1.6px;
-  text-transform:uppercase;color:var(--negro);
+  margin-top:16px;font-size:9px;line-height:20px;letter-spacing:1.6px;
+  text-transform:uppercase;color:var(--borde);
 }
 .about_text h1{text-align:left}
 .about_kicker{
