@@ -201,7 +201,7 @@ p{margin:0 0 18px}
    quedándose pegadas arriba y tapando el menú. */
 #site_header{
   position:sticky;top:0;z-index:200;
-  background:var(--beige);
+  background:#fcdcc2;
   color:var(--negro);
   padding:0 .7%;
   transition:border-color .3s ease;
