@@ -472,7 +472,6 @@ footer{padding:0}
   .contact_section{scroll-margin-top:95px}
   h1{font-size:40px;line-height:46px}
   h2{font-size:26px;line-height:34px}
-  .about_grid{grid-template-columns:1fr;gap:40px}
   /* en pantallas chicas el retrato deja de ser pegajoso y vuelve a 3:4 */
   .about_photo{position:static;max-width:340px;height:auto;display:block}
   .about_photo img{aspect-ratio:3/4;height:auto}
@@ -494,6 +493,7 @@ footer{padding:0}
   .hero p{margin-top:22px}
   .hero2 p{margin-top:22px}
   .qbutton{margin-top:34px}
+  .about_grid{grid-template-columns:1fr;gap:40px}
 
 
   .portfolio-section-h2{margin:20px 60px 20px 60px;}
