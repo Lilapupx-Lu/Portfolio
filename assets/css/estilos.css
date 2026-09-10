@@ -241,7 +241,7 @@ nav.main_menu > ul{list-style:none;margin:0;padding:0;display:flex;align-items:c
 nav.main_menu > ul > li{position:relative}
 nav.main_menu > ul > li > a{
   display:block;padding:0 16px;line-height:80px;
-  font-family:'Poppins',sans-serif;font-size:18px;color:var(--negro);
+  font-family:'Poppins',sans-serif;font-size:18px;color:white;
 }
 nav.main_menu > ul > li > a:hover,
 nav.main_menu > ul > li > a.current{color:var(--negro)}
@@ -294,6 +294,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 .hero p{max-width:830px;margin:0 auto 0;color:var(--negro)}
 .hero2 p {max-width:830px;margin-top:22px auto 0;color:var(--negro)}
 .qbutton{
+  background: var(--vino);
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
   margin-top:0px;
   padding:0 27px;height:43px;line-height:41px;
@@ -303,7 +304,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;
   transition:background-color .2s ease,color .2s ease,border-color .2s ease;
 }
-.qbutton:hover{background:var(--negro);color:var(--vino)}
+.qbutton:hover{background:var(--negro);color:var(--vino);fill:var(--vino)}
 /* el icono hereda el color del texto: negro normal, negro al invertirse en hover */
 .qbutton svg{width:16px;height:16px;fill:white;flex:none}
 
@@ -409,7 +410,7 @@ footer{padding:0}
 .footer_bottom_border{height:1px;background:var(--negro);opacity:.22}
 /* copyright: un solo renglón centrado */
 .footer_bottom{max-width:1300px;margin:0 auto;padding:20px 15px;color:var(--vino);text-align:center}
-.footer_bottom p{margin:0;font-size:14px;line-height:22px;color:var(--vino)}
+.footer_bottom p{margin:0;font-size:14px;line-height:22px;color:var(--beige)}
 
 #back_to_top{
   position:fixed;right:25px;bottom:25px;z-index:150;
