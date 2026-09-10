@@ -159,7 +159,7 @@ body{
   font-size:15px;
   line-height:26px;
   color:var(--negro);
-  background: linear-gradient(var(--beige), var(--vino));
+  background: linear-gradient(var(--vino), var(--beige));
   -webkit-font-smoothing:antialiased;
   /* ninguna palabra larga (un email, una URL) puede desbordar a lo ancho */
   overflow-wrap:break-word;
@@ -201,8 +201,8 @@ p{margin:0 0 18px}
    quedándose pegadas arriba y tapando el menú. */
 #site_header{
   position:sticky;top:0;z-index:200;
-  background:#fcdcc2;
-  color:var(--negro);
+  background:var(--vino);
+  color:white;
   padding:0 .7%;
   transition:border-color .3s ease;
   border-bottom:1px solid transparent;
@@ -220,21 +220,21 @@ p{margin:0 0 18px}
 
 /* conmutador de idioma: el activo en negro, el otro apagado */
 .lang_switch{display:flex;align-items:center;gap:5px;font-size:13px;letter-spacing:1px; margin-right: 18px;}
-.lang_switch .on{color:var(--negro);font-weight:bold}
-.lang_switch .sep{color:var(--negro)}
-.lang_switch a{color:var(--negro);padding:8px 2px}
-.lang_switch a:hover{color:var(--vino)}
+.lang_switch .on{color:white;font-weight:bold}
+.lang_switch .sep{color:white}
+.lang_switch a{color:white;padding:8px 2px}
+.lang_switch a:hover{color:var(--negro)}
 /* dos renglones fijos: el nombre arriba, la bajada abajo, ninguno se parte */
 .q_logo a{
   display:block;white-space:nowrap;
   font-family:'Fraunces',serif;font-size:27px;line-height:1;font-weight:500;
-  letter-spacing:-.5px;color:var(--negro);
+  letter-spacing:-.5px;color:white;
 }
-.q_logo a:hover{color:var(--vino)}
+.q_logo a:hover{color:var(--negro)}
 .q_logo .claim{
   display:block;margin-top:5px;white-space:nowrap;
   font-family:'Poppins',sans-serif;font-size:10px;line-height:1;font-weight:400;
-  letter-spacing:2.4px;text-transform:uppercase;color:var(--negro);
+  letter-spacing:2.4px;text-transform:uppercase;color:white;
 }
 nav.main_menu{justify-self:center;display:flex;justify-content:center}
 nav.main_menu > ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:6px}
@@ -369,17 +369,17 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 /* ---------- contacto ---------- */
 /* el header es sticky (100px): este margen evita que tape el título al saltar al ancla */
 .contact_section{text-align:center;padding:60px 0 40px;scroll-margin-top:120px}
-.contact_section h2{margin-bottom:32px; color:white;}
+.contact_section h2{margin-bottom:32px; color:var(--vino)}
 .contact_section p{max-width:800px;margin-left:auto;margin-right:auto}
 .contact_section strong{font-weight:600}
 /* iconos de contacto, mismo tamaño y color que los del pie */
 .contact_social{display:flex;justify-content:center;gap:26px;margin-top:30px}
-.contact_social svg{width:25px;height:25px;fill:var(--beige)}
+.contact_social svg{width:25px;height:25px;fill:var(--vino)}
 .contact_social a:hover svg{fill:var(--negro)}
 
 /* ---------- footer ---------- */
 footer{padding:0}
-.footer_top_holder{background:none;color:white}
+.footer_top_holder{background:none;color:var(--negro)}
 .footer_top{max-width:1300px;margin:0 auto;padding:60px 15px 45px;text-align:center}
 .footer_top p,.footer_top h5{color:var(--negro)}
 .footer_top a{color:var(--negro)}
