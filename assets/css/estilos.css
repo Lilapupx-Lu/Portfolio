@@ -173,7 +173,6 @@ main{
 ::selection{background:var(--negro);color:var(--negro)}
 img{max-width:100%;display:block}
 .excepciones{color:white;text-decoration:none;transition:color .2s ease;}
-.excepciones:hover{color:var(--negro)}
 a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s ease;}
 a:hover{color:var(--vino)}
 :focus-visible{outline:2px solid var(--vino);outline-offset:3px}
@@ -254,7 +253,7 @@ nav.main_menu li ul li{position:relative}
 nav.main_menu li ul li a{
   display:block;padding:8px 20px;color:white;font-size:14px;line-height:20px;
 }
-nav.main_menu li ul li a:hover{color:white}
+nav.main_menu li ul li a:hover{color:var(--negro)}
 nav.main_menu li ul ul{top:0;left:100%}
 .has_sub > a::after{content:'';display:inline-block;width:5px;height:5px;margin-left:8px;vertical-align:middle;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-2px)}
 nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
