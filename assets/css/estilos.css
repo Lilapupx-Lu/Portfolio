@@ -428,7 +428,7 @@ footer{padding:0}
 .category_section{padding:60px 0 40px 0 }
 
 /* ocupa exactamente el ancho de la grilla de imágenes */
-.category_intro{max-width:none;margin:0 20px 45px 20px;text-align:left}
+.category_intro{max-width:none;margin:0 20px 45px 20px;text-align:center}
 .category_intro p{font-size:16px;line-height:30px;margin:0 0 14px}
 .category_intro p:last-child{margin-bottom:0}
 
