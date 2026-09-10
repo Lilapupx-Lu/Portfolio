@@ -185,6 +185,7 @@ h5{font-family:'Poppins',sans-serif;font-size:18px;line-height:24px;font-weight:
 p{margin:0 0 18px}
 .Header_Text{margin:0 18px 0}
 .about_text{margin-top: 40px}
+li::marker {color:var(--vino)}
 
 /* ---------- paspartu (marco blanco del theme Bridge) ---------- */
 .paspartu{padding:0 .7%}
@@ -455,9 +456,9 @@ footer{padding:0}
 .about_text h2{font-size:22px;line-height:30px;margin:46px 0 16px}
 .about_list{list-style:none;padding:0;margin:0 0 20px;display:grid;grid-template-columns:1fr 1fr;gap:9px 26px}
 .about_list li{position:relative;padding-left:19px}
-.about_list li::before{
+.about_list li::marker{
   content:'';position:absolute;left:0;top:11px;
-  width:6px;height:6px;border-radius:50%;background:var(--negro);
+  width:6px;height:6px;border-radius:50%;background:var(--vino);
 }
 .about_text .qbutton{margin-top:34px}
 
