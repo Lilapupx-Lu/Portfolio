@@ -185,7 +185,7 @@ h5{font-family:'Poppins',sans-serif;font-size:18px;line-height:24px;font-weight:
 p{margin:0 0 18px}
 .Header_Text{margin:0 18px 0}
 .about_text{margin-top: 40px}
-li::marker {color:var(--vino)}
+li::before {color:var(--vino)}
 
 /* ---------- paspartu (marco blanco del theme Bridge) ---------- */
 .paspartu{padding:0 .7%}
