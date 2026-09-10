@@ -468,7 +468,7 @@ footer{padding:0}
 @media (max-width:1000px){
   /* sin el menú central quedan dos columnas: si se dejaran las tres, la
      tercera (vacía) empujaría los botones lejos del borde derecho */
-  .header_inner{height:80px;grid-template-columns:1fr auto auto; align-items: center; gap: 20px;}
+  .header_inner{height:80px;grid-template-columns:1fr auto 1fr; align-items: center; gap: 20px;}
   .contact_section{scroll-margin-top:95px}
   h1{font-size:40px;line-height:46px}
   h2{font-size:26px;line-height:34px}
