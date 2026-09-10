@@ -370,7 +370,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 /* ---------- contacto ---------- */
 /* el header es sticky (100px): este margen evita que tape el título al saltar al ancla */
 .contact_section{text-align:center;padding:60px 0 40px;scroll-margin-top:120px}
-.contact_section h2{margin-bottom:32px; color:var(--vino)}
+.contact_section h2{margin-bottom:10px; color:var(--negro)}
 .contact_section p{max-width:800px;margin-left:auto;margin-right:auto}
 .contact_section strong{font-weight:600}
 /* iconos de contacto, mismo tamaño y color que los del pie */
@@ -391,7 +391,7 @@ footer{padding:0}
 .footer_contact_group{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 36px}
 /* email y teléfono: mismo tamaño de texto y los dos iconos del mismo color */
 .footer_contact{display:flex;align-items:center;gap:11px;margin:0;font-size:15px;line-height:26px}
-.footer_contact svg{width:17px;height:17px;fill:var(--negro);flex:none}
+.footer_contact svg{width:17px;height:17px;fill:var(--vino);flex:none}
 .footer_contact a{min-width:0}
 .footer_logo{margin:0}
 .footer_logo .name{
