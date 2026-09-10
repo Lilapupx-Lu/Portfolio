@@ -179,13 +179,13 @@ a:hover{color:var(--vino)}
 :focus-visible{outline:2px solid var(--vino);outline-offset:3px}
 h1,h2,h5{margin:0}
 h3{margin: bottom 14px;}
-h1:not(.category-h1){font-family:'Fraunces',serif;font-size:52px;line-height:57px;font-weight:500;letter-spacing:-.5px;color:var(--negro)}
+h1{font-family:'Fraunces',serif;font-size:52px;line-height:57px;font-weight:500;letter-spacing:-.5px;color:var(--negro)}
 h2{font-family:'Poppins',sans-serif;font: size 28px;px;line-height:40px;font-weight:400;color:var(--negro)}
 h5{font-family:'Poppins',sans-serif;font-size:18px;line-height:24px;font-weight:400;color:var(--negro)}
 p{margin:0 0 18px}
 .Header_Text{margin:0 18px 0}
 .about_text{margin-top: 10px}
-.category-h1{padding:10px 0 40px 0;font-size:20px; color:var(--borde);line-height:20px;letter-spacing:1.6px;
+.category-subheadline{padding:10px 0 40px 0;font-size:20px; color:var(--borde);letter-spacing:1.6px;
   text-transform:uppercase;}
 .category-main-h1{color: var(--vino)}
 
@@ -254,7 +254,7 @@ nav.main_menu li ul li{position:relative}
 nav.main_menu li ul li a{
   display:block;padding:8px 20px;color:white;font-size:14px;line-height:20px;
 }
-nav.main_menu li ul li a:hover{color:var(--vino)}
+nav.main_menu li ul li a:hover{color:white}
 nav.main_menu li ul ul{top:0;left:100%}
 .has_sub > a::after{content:'';display:inline-block;width:5px;height:5px;margin-left:8px;vertical-align:middle;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-2px)}
 nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
