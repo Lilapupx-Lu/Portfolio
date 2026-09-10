@@ -444,7 +444,7 @@ footer{padding:0}
   border-radius:var(--radio);
 }
 .about_photo figcaption{
-  margin-top:16px;font-size:9px;line-height:20px;letter-spacing:1.6px;
+  font-size:9px;line-height:20px;letter-spacing:1.6px;
   text-transform:uppercase;color:var(--borde);
 }
 .about_text h1{text-align:left}
