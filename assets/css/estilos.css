@@ -170,7 +170,7 @@ main{
   background:white;margin: 0 40px 0 40px;border-radius:var(--radio);
 }
 
-::selection{background:white);color:var(--negro)}
+::selection{background:var(--vino);color:white}
 img{max-width:100%;display:block}
 .excepciones{color:white;text-decoration:none;transition:color .2s ease;}
 a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s ease;}
