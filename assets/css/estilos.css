@@ -352,17 +352,17 @@ hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);hei
 .portfolio-item .portfolio_title{
   font-family:'Poppins',sans-serif;font-size:18px;line-height:26px;font-weight:400;color:var(--beige);
 }
-.portfolio-item .portfolio_title a{color:var(--negro)}
+.portfolio-item .portfolio_title a{color:white}
 .portfolio-item .portfolio_title a:hover{color:var(--vino)}
 .portfolio-item .portfolio_subtitle{
-  display:block;margin-top:6px;font-size:13px;line-height:20px;color:var(--negro);
+  display:block;margin-top:6px;font-size:13px;line-height:20px;color:white;
 }
 .feature_holder_icons{display:flex;gap:10px;justify-content:center}
 .qbutton.small.white{
   margin:0;height:33px;line-height:31px;padding:0 18px;font-size:11px;
   border-color:white;color:white;background:transparent;
 }
-.qbutton.small.white:hover{background:var(--vino);color:var(--vino)}
+.qbutton.small.white:hover{background:var(--vino);color:white}
 
 /* ---------- contacto ---------- */
 /* el header es sticky (100px): este margen evita que tape el título al saltar al ancla */
@@ -419,6 +419,7 @@ footer{padding:0}
 }
 #back_to_top:hover{background:var(--vino);fill:white}
 #back_to_top svg{width:16px;height:16px;fill:var(--vino)}
+#back_to_top svg:hover{fill:white}
 
 /* ---------- página de categoría ---------- */
 .category_section{padding:60px 0 40px 0 }
