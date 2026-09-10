@@ -348,7 +348,7 @@ hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);hei
 .portfolio-item:hover .overlay,
 .portfolio-item:focus-within .overlay{opacity:1}
 .portfolio-item .portfolio_title{
-  font-family:'Poppins',sans-serif;font-size:18px;line-height:26px;font-weight:400;color:var(--negro);
+  font-family:'Poppins',sans-serif;font-size:18px;line-height:26px;font-weight:400;color:var(--beige);
 }
 .portfolio-item .portfolio_title a{color:var(--negro)}
 .portfolio-item .portfolio_title a:hover{color:var(--vino)}
@@ -358,9 +358,9 @@ hr{margin:40px auto 20px auto; max-width: 60%; background-color: var(--vino);hei
 .feature_holder_icons{display:flex;gap:10px;justify-content:center}
 .qbutton.small.white{
   margin:0;height:33px;line-height:31px;padding:0 18px;font-size:11px;
-  border-color:var(--negro);color:var(--negro);background:transparent;
+  border-color:white;color:white;background:transparent;
 }
-.qbutton.small.white:hover{background:var(--negro);color:var(--negro)}
+.qbutton.small.white:hover{background:var(--vino);color:var(--vino)}
 
 /* ---------- contacto ---------- */
 /* el header es sticky (100px): este margen evita que tape el título al saltar al ancla */
