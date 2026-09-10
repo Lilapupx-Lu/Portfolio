@@ -452,7 +452,7 @@ footer{padding:0}
 }
 .about_lead{font-size:19px;line-height:33px;margin-top:26px}
 .about_text h2{font-size:22px;line-height:30px;margin:46px 0 16px}
-.about_list{list-style:none;padding:0;margin:0 0 20px;display:grid;grid-template-columns:1fr 1fr;gap:9px 26px}
+.about_list{list-style:none;padding:0;margin:0 0 20px;display:grid;grid-template-columns:1fr 1fr;gap:0px 20px}
 .about_list li{position:relative;padding-left:19px}
 .about_list li::before{
   content:'';position:absolute;left:0;top:11px;
