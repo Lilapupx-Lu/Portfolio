@@ -545,7 +545,7 @@ footer{padding:0}
 
   .footer_top{padding:48px 20px 40px}
   .footer_main{gap:26px}
-  .footer_contact_group{gap:4px 28px}
+  .footer_contact_group{gap:4px 28px;padding: 20px 50px 0}
   .footer_social a{padding:6px;display:inline-flex}
 
   #back_to_top{right:16px;bottom:16px}
