@@ -268,7 +268,7 @@ nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
   display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--negro);
   width:44px;height:44px;align-items:center;justify-content:center;
 }
-.mobile_menu_button svg{width:22px;height:22px;fill:var(--vino)}
+.mobile_menu_button svg{width:22px;height:22px;fill:var(--negro)}
 nav.mobile_menu{
   display:none;padding:6px 0 20px;
   /* si el menú no entra en pantalla, se desplaza solo y no arrastra la página */
