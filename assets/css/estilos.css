@@ -265,7 +265,7 @@ nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
 
 /* 44px de lado: el mínimo cómodo para tocar con el pulgar */
 .mobile_menu_button{
-  display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--vino);
+  display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--negro);
   width:44px;height:44px;align-items:center;justify-content:center;
 }
 .mobile_menu_button svg{width:22px;height:22px;fill:var(--vino)}
@@ -275,8 +275,8 @@ nav.mobile_menu{
   max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain;
 }
 nav.mobile_menu ul{list-style:none;margin:0;padding:0}
-nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:var(--negro);border-bottom:1px solid var(--borde)}
-nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--vino)}
+nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:white;border-bottom:1px solid white}
+nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--negro)}
 nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
