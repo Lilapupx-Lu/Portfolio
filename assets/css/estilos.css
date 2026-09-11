@@ -389,7 +389,7 @@ footer{padding:0}
 
 /* bloque central: contacto, nombre y redes, todo centrado */
 .footer_main{display:flex;flex-direction:column;align-items:center;gap:30px}
-.footer_contact_group{display:grid;flex-wrap:wrap;justify-content:center;padding: 20px 200px 0;grid-template-columns: 1fr 1fr;}
+.footer_contact_group{display:flex;flex-wrap:wrap;justify-content:center;padding: 20px 200px 0;}
 /* email y teléfono: mismo tamaño de texto y los dos iconos del mismo color */
 .footer_contact{display:flex;align-items:center;gap:11px;margin:0;font-size:15px;line-height:26px}
 .footer_contact svg{width:17px;height:17px;fill:var(--vino);flex:none}
