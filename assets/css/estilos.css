@@ -173,6 +173,7 @@ main{
 ::selection{background:var(--vino);color:white}
 img{max-width:100%;display:block}
 .excepciones{color:white;text-decoration:none;transition:color .2s ease;}
+.excepciones:hover{color:var(--negro)}
 a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s ease;}
 a:hover{color:var(--vino)}
 :focus-visible{outline:2px solid white;outline-offset:3px;box-shadow: 0 0 0 4px var(--negro)}
