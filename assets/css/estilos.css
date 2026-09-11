@@ -275,7 +275,7 @@ nav.mobile_menu{
   max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain;
 }
 nav.mobile_menu ul{list-style:none;margin:0;padding:0}
-nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:white;border-bottom:1px solid white}
+nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:white;border-bottom:2px solid var(--borde)}
 nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--negro)}
 nav.mobile_menu.open{display:block}
 
