@@ -128,15 +128,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/*
-  Paleta oscura. Ratios de contraste WCAG medidos sobre el fondo #0b0b0b:
-    negro      #e8dcc8 -> 14.5:1  (AAA texto normal)
-    negro-mut  #b8ac98 ->  8.8:1  (AAA texto normal)
-    salvia     #9dbfac ->  9.8:1  (AAA texto normal)
-    vino      #d9909f ->  7.9:1  (AAA texto normal)
-  Sobre el fondo del footer #121a15 los cuatro suben aún un poco.
-  Nada por debajo de 4.5:1, ni en texto ni en bordes de botón (3:1).
-*/
 :root{
   --negro:#100701;
   --beige:#fde4cd;
@@ -150,7 +141,6 @@
 *{box-sizing:border-box}
 html{
   scroll-behavior:smooth;
-  /* iOS infla el texto al rotar el teléfono si no se fija esto */
   -webkit-text-size-adjust:100%;
 }
 body{
@@ -161,7 +151,6 @@ body{
   color:var(--negro);
   background: linear-gradient(var(--vino), var(--beige));
   -webkit-font-smoothing:antialiased;
-  /* ninguna palabra larga (un email, una URL) puede desbordar a lo ancho */
   overflow-wrap:break-word;
   overflow-x:hidden;
 }
@@ -178,9 +167,9 @@ a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s
 a:hover{color:var(--vino)}
 :focus-visible{outline:2px solid white;outline-offset:3px;box-shadow: 0 0 0 4px var(--negro)}
 h1,h2,h5{margin:0}
-h3{margin: bottom 14px;}
+h3{margin-bottom: 14px;}
 h1{font-family:'Fraunces',serif;font-size:52px;line-height:57px;font-weight:500;letter-spacing:-.5px;color:var(--negro)}
-h2{font-family:'Poppins',sans-serif;font: size 28px;px;line-height:40px;font-weight:400;color:var(--negro)}
+h2{font-family:'Poppins',sans-serif;font-size: 28px;line-height:40px;font-weight:400;color:var(--negro)}
 h5{font-family:'Poppins',sans-serif;font-size:18px;line-height:24px;font-weight:400;color:var(--negro)}
 p{margin:0 0 18px}
 .Header_Text{margin:0 18px 0}
@@ -191,15 +180,11 @@ p{margin:0 0 18px}
 .category-main-h1{color: var(--negro);font-size:65px}
 .category-subheadline{padding:5px 0 20px 0;font-size:20px; color:var(--vino);letter-spacing:1.6px;
   text-transform:uppercase;font-family: 'Poppins';}
-.category-main-h1{color: var(--negro);font-size:65px}
 
-/* ---------- paspartu (marco blanco del theme Bridge) ---------- */
+/* ---------- paspartu ---------- */
 .paspartu{padding:0 .7%}
 
 /* ---------- header ---------- */
-/* OJO: apuntar al #site_header y no a la etiqueta <header> a secas.
-   Las secciones usan <header> para su título y heredaban el sticky,
-   quedándose pegadas arriba y tapando el menú. */
 #site_header{
   position:sticky;top:0;z-index:200;
   background:var(--negro);
@@ -208,9 +193,6 @@ p{margin:0 0 18px}
   transition:border-color .3s ease;
   border-bottom:1px solid transparent;
 }
-#site_header.scrolled{}
-/* grid de 3 columnas: el menú queda centrado de verdad, sin importar
-   qué ancho tenga el logo ni qué haya a la derecha */
 .header_inner{
   max-width:1300px;margin:0 auto;
   height:80px;
@@ -219,13 +201,11 @@ p{margin:0 0 18px}
 .q_logo{justify-self:start; margin-left: 18px}
 .header_actions{justify-self:end;display:flex;align-items:center;gap:14px}
 
-/* conmutador de idioma: el activo en negro, el otro apagado */
 .lang_switch{display:flex;align-items:center;gap:5px;font-size:13px;letter-spacing:1px; margin-right: 18px;}
 .lang_switch .on{color:white;font-weight:bold}
 .lang_switch .sep{color:white}
 .lang_switch a{color:white;padding:8px 2px}
 .lang_switch a:hover{color:var(--vino)}
-/* dos renglones fijos: el nombre arriba, la bajada abajo, ninguno se parte */
 .q_logo a{
   display:block;white-space:nowrap;
   font-family:'Fraunces',serif;font-size:27px;line-height:1;font-weight:500;
@@ -244,7 +224,7 @@ nav.main_menu > ul > li > a{
   display:block;padding:0 16px;line-height:80px;
   font-family:'Poppins',sans-serif;font-size:18px;color:white;
 }
-nav.main_menu > ul > li > a:hover{color:(var(--vino))}
+nav.main_menu > ul > li > a:hover{color:var(--vino)}
 nav.main_menu > ul > li > a.current{color:white}
 nav.main_menu li ul{
   list-style:none;margin:0;padding:8px 0;
@@ -263,8 +243,6 @@ nav.main_menu li ul ul{top:0;left:100%}
 .has_sub > a::after{content:'';display:inline-block;width:5px;height:5px;margin-left:8px;vertical-align:middle;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-2px)}
 nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
 
-
-/* 44px de lado: el mínimo cómodo para tocar con el pulgar */
 .mobile_menu_button{
   display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--negro);
   width:44px;height:44px;align-items:center;justify-content:center;
@@ -272,11 +250,10 @@ nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
 .mobile_menu_button svg{width:22px;height:22px;fill:var(--vino)}
 nav.mobile_menu{
   display:none;padding:6px 0 20px;
-  /* si el menú no entra en pantalla, se desplaza solo y no arrastra la página */
   max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain;
 }
 nav.mobile_menu ul{list-style:none;margin:0;padding:0}
-nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:white;border-bottom:4px solid var(--borde)}
+nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:white;border-bottom:2px solid var(--borde)}
 nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--vino)}
 nav.mobile_menu.open{display:block}
 
@@ -284,7 +261,7 @@ nav.mobile_menu.open{display:block}
 .seccion-servicios{margin:0;padding:0 20px 40px 20px}
 .portfolio-section-h2{
   color: white;text-align:center;margin:20px 300px 20px 300px;background-color: var(--vino);
-  border-radius: var(--radio);font-family:'Fraunces',serif;font: size 48px;px;font-weight:500}
+  border-radius: var(--radio);font-family:'Fraunces',serif;font-size:48px;font-weight:500}
 .trabajos{margin:0;padding:0}
 hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);height: 10px;border: none;border-radius: 10px}
 .section{padding:0 .7%}
@@ -306,7 +283,6 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   transition:background-color .2s ease,color .2s ease,border-color .2s ease;
 }
 .qbutton:hover{background:var(--negro);color:var(--vino);fill:var(--vino)}
-/* el icono hereda el color del texto: negro normal, negro al invertirse en hover */
 .qbutton svg{width:16px;height:16px;fill:white;flex:none}
 
 /* ---------- filtros ---------- */
@@ -317,7 +293,6 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   position:relative;transition:color .2s ease;
 }
 .filter_holder li a{color:inherit;display:block}
-/* la etiqueta corta solo existe en móvil */
 .lbl_corto{display:none}
 .filter_holder li::after{
   content:'';position:absolute;left:0;bottom:2px;width:0;height:1px;
@@ -327,54 +302,126 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 .filter_holder li.current{color:var(--vino)}
 .filter_holder li.current::after{width:100%}
 
-/* ---------- grid ---------- */
-.projects_holder{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
+/* ---------- CARRUSEL 8 IMÁGENES & GRID ---------- */
+
+/* Ventana visible de recorte (máscara) */
+.projects_holder_mask {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radio);
+  padding: 10px 0;
+  margin: -10px 0;
 }
-/* overflow:hidden + border-radius recortan también el overlay del hover */
-.portfolio-item{position:relative;overflow:hidden;background:var(--negro);border-radius:var(--radio);box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15)}
-.portfolio-item img{border-radius:var(--radio)}
-.portfolio-item.hidden{display:none}
-.portfolio-item .image_holder{display:block;position:relative;padding-top:100%;}
-.portfolio-item img{
-  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-  transition:transform .45s ease;
+
+/* Tira interna con las 8 tarjetas */
+.projects_holder {
+  display: flex;
+  gap: 20px;
+  width: calc(200% + 20px);
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
 }
-.portfolio-item:hover img{transform:scale(1.04)}
-.portfolio-item .overlay{
-  position:absolute;inset:0;
-  /* opaco al 96%: el texto negro mantiene ~13:1 sobre cualquier imagen */
-  background:rgba(11,11,11,.96);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:22px;padding:24px;text-align:center;
-  opacity:0;transition:opacity .35s ease;
+
+/* Animación HOVER en PC: desliza la tira a la izquierda */
+.projects_holder_mask:hover .projects_holder {
+  transform: translateX(calc(-50% + 10px));
 }
+
+/* Tarjeta individual (ocupa el ancho perfecto para ver 4 juntas) */
+.portfolio-item {
+  flex: 0 0 calc((100% - (7 * 20px)) / 8);
+  position: relative;
+  overflow: hidden;
+  background: var(--negro);
+  border-radius: var(--radio);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item .image_holder {
+  display: block;
+  position: relative;
+  padding-top: 100%;
+}
+
+.portfolio-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radio);
+  transition: transform .45s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.04);
+}
+
+.portfolio-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11,11,11,.96);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 24px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
 .portfolio-item:hover .overlay,
-.portfolio-item:focus-within .overlay{opacity:1}
-.portfolio-item .portfolio_title{
-  font-family:'Poppins',sans-serif;font-size:18px;line-height:26px;font-weight:400;color:var(--beige);
+.portfolio-item:focus-within .overlay {
+  opacity: 1;
 }
-.portfolio-item .portfolio_title a{color:white}
-.portfolio-item .portfolio_title a:hover{color:var(--vino)}
-.portfolio-item .portfolio_subtitle{
-  display:block;margin-top:6px;font-size:13px;line-height:20px;color:white;
+
+.portfolio-item .portfolio_title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--beige);
 }
-.feature_holder_icons{display:flex;gap:10px;justify-content:center}
-.qbutton.small.white{
-  margin:0;height:33px;line-height:31px;padding:0 18px;font-size:11px;
-  border-color:white;color:white;background:transparent;
+
+.portfolio-item .portfolio_title a { color: white; }
+.portfolio-item .portfolio_title a:hover { color: var(--vino); }
+.portfolio-item .portfolio_subtitle {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 20px;
+  color: white;
 }
-.qbutton.small.white:hover{background:var(--vino);color:white}
+
+.feature_holder_icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.qbutton.small.white {
+  margin: 0;
+  height: 33px;
+  line-height: 31px;
+  padding: 0 18px;
+  font-size: 11px;
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+.qbutton.small.white:hover {
+  background: var(--vino);
+  color: white;
+}
 
 /* ---------- contacto ---------- */
-/* el header es sticky (100px): este margen evita que tape el título al saltar al ancla */
 .contact_section{text-align:center;padding:40px 0 20px;scroll-margin-top:120px}
 .contact_section h2{margin-bottom:10px; color:var(--negro)}
 .contact_section p{max-width:800px;margin-left:auto;margin-right:auto}
 .contact_section strong{font-weight:600}
-/* iconos de contacto, mismo tamaño y color que los del pie */
 .contact_social{display:flex;justify-content:center;gap:26px;margin-top:20px}
 .contact_social svg{width:25px;height:25px;fill:var(--vino)}
 .contact_social a:hover svg{fill:var(--negro)}
@@ -387,10 +434,8 @@ footer{padding:0}
 .footer_top a{color:var(--negro)}
 .footer_top a:hover{color:var(--vino)}
 
-/* bloque central: contacto, nombre y redes, todo centrado */
 .footer_main{display:flex;flex-direction:column;align-items:center;gap:30px}
 .footer_contact_group{display:flex;flex-wrap:wrap;justify-content:center;padding:20px 300px 0;}
-/* email y teléfono: mismo tamaño de texto y los dos iconos del mismo color */
 .footer_contact{display:flex;align-items:center;gap:11px;margin:0;font-size:15px;line-height:26px}
 .footer_contact svg{width:17px;height:17px;fill:var(--vino);flex:none}
 .footer_contact a{min-width:0}
@@ -407,9 +452,8 @@ footer{padding:0}
 .footer_social svg{width:25px;height:25px;fill:var(--negro)}
 .footer_social a:hover svg{fill:var(--vino)}
 
-.footer_bottom_holder{background:var(--negro); width: 100%;;}
+.footer_bottom_holder{background:var(--negro); width: 100%;}
 .footer_bottom_border{height:1px;background:var(--negro);opacity:.22}
-/* copyright: un solo renglón centrado */
 .footer_bottom{max-width:1300px;margin:0 auto;padding:20px 15px;color:var(--vino);text-align:center}
 .footer_bottom p{margin:0;font-size:14px;line-height:22px;color:var(--beige)}
 
@@ -427,8 +471,6 @@ footer{padding:0}
 
 /* ---------- página de categoría ---------- */
 .category_section{padding:60px 0 40px 0 }
-
-/* ocupa exactamente el ancho de la grilla de imágenes */
 .category_intro{max-width:none;margin:0 20px 45px 20px;text-align:center}
 .category_intro p{font-size:16px;line-height:30px;margin:0 0 14px}
 .category_intro p:last-child{margin-bottom:0}
@@ -439,8 +481,6 @@ footer{padding:0}
   display:grid;grid-template-columns:2fr 3fr;
   gap:60px;align-items:start;
 }
-/* el retrato ocupa el alto de la pantalla (menos el header pegajoso) y
-   queda fijo acompañando el scroll mientras el texto avanza al lado */
 .about_photo{
   position:sticky;top:115px;margin:0; height:auto; width: 100%;max-width: 
   360px;min-width: 120px;display:flex;flex-direction:column;
@@ -469,24 +509,32 @@ footer{padding:0}
 .about_text .qbutton{margin-top:34px}
 
 /* ---------- responsive ---------- */
-@media (max-width:1200px){
-  .projects_holder{grid-template-columns:repeat(4,1fr)}
-}
 @media (max-width:1000px){
-  /* sin el menú central quedan dos columnas: si se dejaran las tres, la
-     tercera (vacía) empujaría los botones lejos del borde derecho */
   .header_inner{height:80px;grid-template-columns:1fr auto 1fr; align-items: center; gap: 20px;}
   .contact_section{scroll-margin-top:95px}
   h1{font-size:40px;line-height:46px}
   h2{font-size:26px;line-height:34px}
-  /* en pantallas chicas el retrato deja de ser pegajoso y vuelve a 3:4 */
   .portfolio-section-h2{margin:20px 60px 20px 60px;}
   .about_grid{gap:40px}
- .footer_contact_group{padding: 20px 200px 0}}
-/* ---------- lectura en teléfono ---------- */
+  .footer_contact_group{padding: 20px 200px 0}
+
+  /* Ajustes carrusel en tablets/móviles: scroll táctil horizontal */
+  .projects_holder_mask {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .projects_holder_mask:hover .projects_holder {
+    transform: none;
+  }
+  .projects_holder {
+    width: max-content;
+  }
+  .portfolio-item {
+    flex: 0 0 240px;
+  }
+}
+
 @media (max-width:768px){
-  /* cuerpo un punto más grande y más aire entre líneas: en pantalla chica
-     y a distancia de brazo, 15/26 se lee apretado */
   main{background:white;margin: 0 15px 0 15px;border-radius:var(--radio);}
   body{font-size:16px;line-height:28px}
   .mobile_menu_button{display:flex}
@@ -499,24 +547,17 @@ footer{padding:0}
   .hero2 p{margin-top:22px}
   .qbutton{margin-top:5px}
   .header_inner{grid-template-columns:1fr 1fr;}
-  
   .portfolio-section-h2{margin:20px 60px 20px 60px;}
 
-  .projects_holder{grid-template-columns:repeat(2,1fr);gap:14px}
   .portfolio-item .overlay{opacity:1;background:linear-gradient(to top,rgba(11,11,11,.96) 0%,rgba(11,11,11,.92) 30%,rgba(11,11,11,0) 62%);justify-content:flex-end;gap:12px}
   .portfolio-item .feature_holder_icons{display:none}
   .portfolio-item .portfolio_title{font-size:14px;line-height:20px}
 
-  /* las 6 categorías ocupan el ancho completo en dos filas de tres,
-     con área de toque de 44px de alto */
   .filter_holder{padding-bottom:34px}
   .filter_holder ul{
     display:grid;grid-template-columns:repeat(3,1fr);gap:6px 10px;
   }
   .filter_holder li{font-size:13px;line-height:18px}
-  /* cada categoría dentro de un recuadro de trazo simple: 1px, que es el
-     grosor del asta de la letra a este cuerpo, y `currentColor` para que la
-     línea sea siempre del mismo color que el texto, activo o no */
   .filter_holder li a{
     display:flex;align-items:center;justify-content:center;text-align:center;
     min-height:44px;padding:4px 6px;
@@ -524,7 +565,6 @@ footer{padding:0}
     border-radius:var(--radio-btn);
   }
   .filter_holder li::after{display:none}
-  /* etiqueta corta: "Redes Sociales" no entra en un tercio de pantalla */
   .lbl_full{display:none}
   .lbl_corto{display:inline}
 
@@ -540,7 +580,6 @@ footer{padding:0}
   .about_text h2{margin:36px 0 12px}
   .about_list{grid-template-columns:1fr}
 
-  /* el icono mide 25px pero el área tocable llega a 44 */
   .contact_social{gap:14px}
   .contact_social a{padding:10px;display:inline-flex}
 
@@ -553,14 +592,12 @@ footer{padding:0}
 }
 
 @media (max-width:480px){
-  .projects_holder{grid-template-columns:1fr}
   h1{font-size:30px;line-height:37px}
   h2{font-size:22px;line-height:30px}
   .portfolio-item .portfolio_title{font-size:16px;line-height:23px}
   .footer_logo .name{font-size:26px}
 }
 
-/* márgenes de seguridad en teléfonos con muesca, en horizontal */
 @supports (padding:max(0px)){
   @media (max-width:1000px){#back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}}
 }
