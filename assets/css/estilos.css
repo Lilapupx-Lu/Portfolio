@@ -328,7 +328,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 }
 
 /* Animación HOVER en PC: desliza la tira a la izquierda */
-.projects_holder_index_mask:hover .projects_holder {
+.projects_holder_index_mask:hover .projects_holder_index {
   transform: translateX(calc(-50% + 10px));
 }
 
