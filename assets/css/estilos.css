@@ -293,7 +293,6 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   position:relative;transition:color .2s ease;
 }
 .filter_holder li a{color:inherit;display:block}
-.lbl_corto{display:none}
 .filter_holder li::after{
   content:'';position:absolute;left:0;bottom:2px;width:0;height:1px;
   background:var(--vino);transition:width .3s ease;
@@ -570,8 +569,6 @@ footer{padding:0}
     border-radius:var(--radio-btn);
   }
   .filter_holder li::after{display:none}
-  .lbl_full{display:none}
-  .lbl_corto{display:inline}
 
   .category_section{padding-top:44px}
   .category_intro{margin-bottom:32px}
