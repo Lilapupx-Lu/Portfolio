@@ -318,8 +318,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   display: flex;
   gap: 20px;
   width: calc(200% + 20px);
-  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  will-change: transform;
+  transition: transform 10s;
 }
 .projects_holder{
   display:grid;
