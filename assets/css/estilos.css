@@ -305,7 +305,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 /* ---------- CARRUSEL 8 IMÁGENES & GRID ---------- */
 
 /* Ventana visible de recorte (máscara) */
-.projects_holder_mask {
+.projects_holder_index_mask {
   width: 100%;
   overflow: hidden;
   border-radius: var(--radio);
@@ -314,16 +314,21 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 }
 
 /* Tira interna con las 8 tarjetas */
-.projects_holder {
+.projects_holder_index {
   display: flex;
   gap: 20px;
   width: calc(200% + 20px);
   transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
 }
+.projects_holder{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
 
 /* Animación HOVER en PC: desliza la tira a la izquierda */
-.projects_holder_mask:hover .projects_holder {
+.projects_holder_index_mask:hover .projects_holder {
   transform: translateX(calc(-50% + 10px));
 }
 
@@ -519,14 +524,15 @@ footer{padding:0}
   .footer_contact_group{padding: 20px 200px 0}
 
   /* Ajustes carrusel en tablets/móviles: scroll táctil horizontal */
-  .projects_holder_mask {
+  .projects_holder_index_mask {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .projects_holder_mask:hover .projects_holder {
+  .projects_holder{grid-template-columns:repeat(4,1fr)}
+  .projects_holder_index_mask:hover .projects_holder_index {
     transform: none;
   }
-  .projects_holder {
+  .projects_holder_index {
     width: max-content;
   }
   .portfolio-item {
