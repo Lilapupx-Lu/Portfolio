@@ -167,7 +167,7 @@ body{
 }
 
 main{
-  background:white;margin: 0 40px 0 40px;border-radius:var(--radio);
+  background:white;margin: 40px 40px 0 40px;border-radius:var(--radio);
 }
 
 ::selection{background:var(--vino);color:white}
@@ -202,7 +202,7 @@ p{margin:0 0 18px}
    quedándose pegadas arriba y tapando el menú. */
 #site_header{
   position:sticky;top:0;z-index:200;
-  background:var(--vino);
+  background:var(--negro);
   color:white;
   padding:0 .7%;
   transition:border-color .3s ease;
@@ -224,14 +224,14 @@ p{margin:0 0 18px}
 .lang_switch .on{color:white;font-weight:bold}
 .lang_switch .sep{color:white}
 .lang_switch a{color:white;padding:8px 2px}
-.lang_switch a:hover{color:var(--negro)}
+.lang_switch a:hover{color:var(--vino)}
 /* dos renglones fijos: el nombre arriba, la bajada abajo, ninguno se parte */
 .q_logo a{
   display:block;white-space:nowrap;
   font-family:'Fraunces',serif;font-size:27px;line-height:1;font-weight:500;
   letter-spacing:-.5px;color:white;
 }
-.q_logo a:hover{color:var(--negro)}
+.q_logo a:hover{color:var(--vino)}
 .q_logo .claim{
   display:block;margin-top:5px;white-space:nowrap;
   font-family:'Poppins',sans-serif;font-size:10px;line-height:1;font-weight:400;
@@ -244,21 +244,21 @@ nav.main_menu > ul > li > a{
   display:block;padding:0 16px;line-height:80px;
   font-family:'Poppins',sans-serif;font-size:18px;color:white;
 }
-nav.main_menu > ul > li > a:hover,
-nav.main_menu > ul > li > a.current{color:var(--negro)}
+nav.main_menu > ul > li > a:hover{color:(var(--vino))}
+nav.main_menu > ul > li > a.current{color:white}
 nav.main_menu li ul{
   list-style:none;margin:0;padding:8px 0;
   position:absolute;top:100%;left:0;min-width:230px;
-  background:var(--vino);
+  background:var(--negro);
   opacity:0;visibility:hidden;transform:translateY(6px);
-  transition:opacity .25s ease,transform .25s ease,visibility .25s;
+  transition:opacity .25s ease,transform .25s ease,visibility .25s; border-radius: 0 0 var(--radio) var(--radio);
 }
 nav.main_menu li:hover > ul{opacity:1;visibility:visible;transform:translateY(0)}
 nav.main_menu li ul li{position:relative}
 nav.main_menu li ul li a{
   display:block;padding:8px 20px;color:white;font-size:14px;line-height:20px;
 }
-nav.main_menu li ul li a:hover{color:var(--negro)}
+nav.main_menu li ul li a:hover{color:var(--vino)}
 nav.main_menu li ul ul{top:0;left:100%}
 .has_sub > a::after{content:'';display:inline-block;width:5px;height:5px;margin-left:8px;vertical-align:middle;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-2px)}
 nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
@@ -269,7 +269,7 @@ nav.main_menu li ul .has_sub > a::after{float:right;transform:rotate(-45deg)}
   display:none;background:none;border:0;padding:0;cursor:pointer;color:var(--negro);
   width:44px;height:44px;align-items:center;justify-content:center;
 }
-.mobile_menu_button svg{width:22px;height:22px;fill:var(--negro)}
+.mobile_menu_button svg{width:22px;height:22px;fill:var(--vino)}
 nav.mobile_menu{
   display:none;padding:6px 0 20px;
   /* si el menú no entra en pantalla, se desplaza solo y no arrastra la página */
@@ -277,7 +277,7 @@ nav.mobile_menu{
 }
 nav.mobile_menu ul{list-style:none;margin:0;padding:0}
 nav.mobile_menu > ul > li > a{display:block;padding:15px 20px;font-size:16px;color:white;border-bottom:4px solid var(--borde)}
-nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--negro)}
+nav.mobile_menu ul ul a{display:block;padding:12px 20px 12px 40px;font-size:15px;color:var(--vino)}
 nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
@@ -370,12 +370,12 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 
 /* ---------- contacto ---------- */
 /* el header es sticky (100px): este margen evita que tape el título al saltar al ancla */
-.contact_section{text-align:center;padding:60px 0 40px;scroll-margin-top:120px}
+.contact_section{text-align:center;padding:40px 0 20px;scroll-margin-top:120px}
 .contact_section h2{margin-bottom:10px; color:var(--negro)}
 .contact_section p{max-width:800px;margin-left:auto;margin-right:auto}
 .contact_section strong{font-weight:600}
 /* iconos de contacto, mismo tamaño y color que los del pie */
-.contact_social{display:flex;justify-content:center;gap:26px;margin-top:30px}
+.contact_social{display:flex;justify-content:center;gap:26px;margin-top:20px}
 .contact_social svg{width:25px;height:25px;fill:var(--vino)}
 .contact_social a:hover svg{fill:var(--negro)}
 
@@ -497,7 +497,7 @@ footer{padding:0}
   .hero{padding:48px 0 42px}
   .hero p{margin-top:22px}
   .hero2 p{margin-top:22px}
-  .qbutton{margin-top:34px}
+  .qbutton{margin-top:5px}
   .header_inner{grid-template-columns:1fr 1fr;}
   
   .portfolio-section-h2{margin:20px 60px 20px 60px;}
@@ -540,14 +540,13 @@ footer{padding:0}
   .about_text h2{margin:36px 0 12px}
   .about_list{grid-template-columns:1fr}
 
-  .contact_section{padding:45px 0 60px}
   /* el icono mide 25px pero el área tocable llega a 44 */
   .contact_social{gap:14px}
   .contact_social a{padding:10px;display:inline-flex}
 
   .footer_top{padding:48px 20px 40px}
   .footer_main{gap:26px}
-  .footer_contact_group{gap:4px 28px;padding: 20px 50px 0}
+  .footer_contact_group{gap:4px 28px;padding: 20px 100px 0}
   .footer_social a{padding:6px;display:inline-flex}
 
   #back_to_top{right:16px;bottom:16px}
