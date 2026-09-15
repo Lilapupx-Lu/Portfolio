@@ -162,7 +162,7 @@ main{
 ::selection{background:var(--vino);color:white}
 img{max-width:100%;display:block}
 .excepciones{color:white;text-decoration:none;transition:color .2s ease;}
-.excepciones:hover{color:var(--negro)}
+.excepciones:hover{color:yellow}
 a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s ease;}
 a:hover{color:var(--vino)}
 :focus-visible{outline:2px solid white;outline-offset:3px;box-shadow: 0 0 0 4px var(--negro)}
@@ -264,6 +264,8 @@ nav.mobile_menu.open{display:block}
 
 .portfolio-section-h2{
   color: white;background-color: var(--vino);text-align:center;font-family:'Fraunces',serif;font-weight:500}
+
+.portfolio-section-h2:hover{background-color:#ad3a01}
 
   .portfolio-section-h2-bugmd{
   background-color: #89c05f;padding:10px}
