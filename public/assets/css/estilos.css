@@ -485,7 +485,7 @@ footer{padding:0}
 #back_to_top svg:hover{fill:white}
 
 /* ---------- página de categoría ---------- */
-.category_section{padding:60px 0 40px 0 }
+.category_section{padding:60px 0 80px 0 }
 .category_intro{max-width:none;margin:0 20px 45px 20px;text-align:center}
 .category_intro p{font-size:16px;line-height:30px;margin:0 0 14px}
 .category_intro p:last-child{margin-bottom:0}
