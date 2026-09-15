@@ -329,7 +329,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   display: flex;
   gap: 20px;
   width: calc(200% + 20px);
-  transition: transform 10s;
+  transition: transform 20s;
 }
 .projects_holder{
   display:grid;
