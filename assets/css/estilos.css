@@ -259,9 +259,21 @@ nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
 .seccion-servicios{margin:0;padding:0 20px 40px 20px}
+.portfolio-section-h2,.portfolio-section-h2-bugmd,.portfolio-section-h2-shameless,.portfolio-section-h2-novamd{
+  margin:60px auto 60px auto;border-radius: var(--radio)}
+
 .portfolio-section-h2{
-  color: white;text-align:center;margin:20px 300px 20px 300px;background-color: var(--vino);
-  border-radius: var(--radio);font-family:'Fraunces',serif;font-weight:500}
+  color: white;background-color: var(--vino);text-align:center;font-family:'Fraunces',serif;font-weight:500}
+
+  .portfolio-section-h2-bugmd{
+  background-color: #89c05f;align-items:center}
+  .portfolio-section-h2-shameless{
+  background-color: #4dc1e7;align-items:center}
+  .portfolio-section-h2-novamd{
+  background-color: #750137;align-items:center}
+
+  .logos-sections{fill:white;height:40px;width: auto;}
+
 .trabajos{margin:0;padding:0}
 hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);height: 10px;border: none;border-radius: 10px}
 .section{padding:0 .7%}
@@ -517,7 +529,9 @@ footer{padding:0}
   .contact_section{scroll-margin-top:95px}
   h1{font-size:40px;line-height:46px}
   h2{font-size:26px;line-height:34px}
-  .portfolio-section-h2{margin:20px 60px 20px 60px;}
+  .portfolio-section-h2,.portfolio-section-h2-bugmd,.portfolio-section-h2-shameless,.portfolio-section-h2-novamd,{margin:40px auto 40px auto}
+
+  
   .about_grid{gap:40px}
   .footer_contact_group{padding: 20px 200px 0}
 
