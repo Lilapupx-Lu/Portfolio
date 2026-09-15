@@ -266,13 +266,13 @@ nav.mobile_menu.open{display:block}
   color: white;background-color: var(--vino);text-align:center;font-family:'Fraunces',serif;font-weight:500}
 
   .portfolio-section-h2-bugmd{
-  background-color: #89c05f;align-items:center}
+  background-color: #89c05f;padding:10px}
   .portfolio-section-h2-shameless{
-  background-color: #4dc1e7;align-items:center}
+  background-color: #4dc1e7;align-items:center;padding:10px}
   .portfolio-section-h2-novamd{
-  background-color: #750137;align-items:center}
+  background-color: #750137;align-items:center;padding:10px}
 
-  .logos-sections{fill:white;height:40px;width: auto;}
+  .logos-sections{height:40px;width: auto;margin:auto}
 
 .trabajos{margin:0;padding:0}
 hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);height: 10px;border: none;border-radius: 10px}
