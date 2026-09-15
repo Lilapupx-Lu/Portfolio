@@ -319,6 +319,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 
 /* Ventana visible de recorte (máscara) */
 .projects_holder_index_mask {
+  position: relative;
   width: 100%;
   overflow: hidden;
   border-radius: var(--radio);
@@ -331,7 +332,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   display: flex;
   gap: 20px;
   width: calc(160% + 20px);
-  transition: transform 20s;
+  transition: transform 20s linear;
 }
 .projects_holder{
   display:grid;
@@ -344,7 +345,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   transform: translateX(calc(-50% + 10px));
 }
 
-/* Tarjeta individual (ocupa el ancho perfecto para ver 4 juntas) */
+/* Tarjeta individual */
 .portfolio-item {
   flex: 0 0 calc((100% - (7 * 20px)) / 8);
   position: relative;
@@ -370,28 +371,39 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   transition: transform .45s ease;
 }
 
-.portfolio-item:hover img {
-  transform: scale(1.04);
+.projects_holder_index_mask:hover .portfolio-item img {
+  transform: scale(1.03);
 }
 
-.portfolio-item .overlay {
+/* Overlay estático fijo superpuesto en el carrusel */
+.carousel_overlay_wrapper {
   position: absolute;
-  inset: 0;
-  background:rgb(102 92 83 / 68%);
+  inset: 10px 0;
+  z-index: 10;
+  background-color: rgba(102, 92, 83, 0.68);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 22px;
-  padding: 24px;
-  text-align: center;
+  border-radius: var(--radio);
   opacity: 0;
-  transition: opacity .35s ease;
+  transition: opacity 0.35s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.portfolio-item:hover .overlay,
-.portfolio-item:focus-within .overlay {
+.carousel_overlay_wrapper:hover,
+.carousel_overlay_wrapper:focus-visible {
   opacity: 1;
+}
+
+.carousel_overlay_wrapper .qbutton {
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: transform 0.3s ease, background-color 0.2s ease;
+}
+
+.carousel_overlay_wrapper:hover .qbutton {
+  transform: translateY(0);
 }
 
 .portfolio-item .portfolio_title {
@@ -533,11 +545,9 @@ footer{padding:0}
   h2{font-size:26px;line-height:34px}
   .portfolio-section-h2,.portfolio-section-h2-bugmd,.portfolio-section-h2-shameless,.portfolio-section-h2-novamd,{margin:40px auto 40px auto}
 
-  
   .about_grid{gap:40px}
   .footer_contact_group{padding: 20px 200px 0}
 
-  /* Ajustes carrusel en tablets/móviles: scroll táctil horizontal */
   .projects_holder_index_mask {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -551,6 +561,9 @@ footer{padding:0}
   }
   .portfolio-item {
     flex: 0 0 240px;
+  }
+  .carousel_overlay_wrapper {
+    display: none;
   }
 }
 
@@ -568,10 +581,6 @@ footer{padding:0}
   .qbutton{margin-top:5px}
   .header_inner{grid-template-columns:1fr 1fr;}
   .portfolio-section-h2{margin:20px 60px 20px 60px;}
-
-  .portfolio-item .overlay{opacity:1;background:linear-gradient(to top,rgba(11,11,11,.96) 0%,rgba(11,11,11,.92) 30%,rgba(11,11,11,0) 62%);justify-content:flex-end;gap:12px}
-  .portfolio-item .feature_holder_icons{display:none}
-  .portfolio-item .portfolio_title{font-size:14px;line-height:20px}
 
   .filter_holder{padding-bottom:34px}
   .filter_holder ul{
