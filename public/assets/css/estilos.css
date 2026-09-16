@@ -466,6 +466,18 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   scroll-snap-type: x mandatory;
 }
 
+/* Oculta la barra de scroll para Chrome, Safari y Opera */
+.projects_holder_index_mask::-webkit-scrollbar {
+  display: none;
+}
+
+/* Oculta la barra de scroll para Firefox y Edge/IE */
+.projects_holder_index_mask {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 .projects_holder_index {
   display: flex;
   gap: 16px;
