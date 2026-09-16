@@ -289,11 +289,11 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   background: var(--vino);
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
   margin-top:0px;
-  padding:0 27px;height:43px;line-height:41px;
+  padding:0 50px;height:43px;line-height:41px;
   border:2px solid white;
   border-radius:var(--radio-btn);
   color:white;
-  font-size:13px;font-weight:500;letter-spacing:1px;text-transform:uppercase;
+  font-weight:500;letter-spacing:1px;text-transform:uppercase;
   transition:background-color .2s ease,color .2s ease,border-color .2s ease;
 }
 .qbutton:hover{background:var(--negro);color:var(--vino);fill:var(--vino)}
