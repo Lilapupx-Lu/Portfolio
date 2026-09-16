@@ -453,8 +453,8 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   pointer-events: auto;
 }
 
-/* Desactivar overlays individuales viejos para evitar conflictos */
-.portfolio-item .overlay {
+/* Desactiva los overlays individuales ÚNICAMENTE dentro de los carruseles del index */
+.projects_holder_index_mask .portfolio-item .overlay {
   display: none !important;
 }
 
@@ -480,6 +480,14 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Tarjeta individual SOLO dentro del carrusel del index */
+.projects_holder_index_mask .portfolio-item {
+  position: relative;
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  overflow: hidden;
+  border-radius: var(--radio);
+}
 
 /* Tira de imágenes interna */
 .projects_holder_index {
