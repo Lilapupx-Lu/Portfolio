@@ -485,7 +485,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* Color de la transparencia */
+  background: rgba(249, 247, 247, 0.6); /* Color de la transparencia */
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 2;
