@@ -435,7 +435,28 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   color: white;
 }
 
+/* 3. Botón "Leer más" estático e independiente del movimiento de las imágenes */
+.index-section-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
 
+/* Muestra el botón centrado sobre la sección al hacer hover */
+.projects_holder_index_mask:hover .index-section-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Desactivar overlays individuales viejos para evitar conflictos */
+.portfolio-item .overlay {
+  display: none !important;
+}
 
 /* Carrusel contenedor (reemplaza la máscara tradicional) */
 .projects_holder_index_mask {
@@ -469,6 +490,11 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   transition: opacity 0.3s ease;
   z-index: 2;
   pointer-events: none; /* Permite hacer scroll horizontal debajo del tinte */
+}
+
+/* Activa la transparencia al hacer hover en cualquier parte de la sección */
+.projects_holder_index_mask:hover::before {
+  opacity: 1;
 }
 
 /* Máscara Hover */
