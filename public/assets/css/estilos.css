@@ -439,10 +439,10 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 
 /* Carrusel contenedor (reemplaza la máscara tradicional) */
 .projects_holder_index_mask {
+  position: relative;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 15px; /* Espacio para la barra de desplazamiento si se muestra */
 }
 
 .projects_holder_index {
@@ -457,6 +457,18 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   width: 280px; /* Ancho fijo para cada card del carrusel */
   scroll-snap-align: start;
   overflow: hidden;
+}
+
+/* 2. Capa de transparencia que cubre TODA la sección en lugar de cada imagen */
+.projects_holder_index_mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Color de la transparencia */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none; /* Permite hacer scroll horizontal debajo del tinte */
 }
 
 /* Máscara Hover */
