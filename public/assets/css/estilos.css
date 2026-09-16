@@ -282,8 +282,8 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 .section_inner{max-width:1100px;margin:0 auto;padding:0 15px}
 .wide_inner{max-width:1300px;margin:0 auto;padding:0 15px}
 
-.hero{text-align:center;padding:60px 0 20px}
-.hero p{max-width:830px;margin:0 auto 0;color:var(--negro)}
+.hero{text-align:center;padding:60px 0 0}
+.hero p{max: width 1200px;px;margin:0 auto 40px ;color:var(--negro)}
 .hero2 p {max-width:830px;margin-top:22px auto 0;color:var(--negro)}
 .qbutton{
   background: var(--vino);
