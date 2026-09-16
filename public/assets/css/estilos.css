@@ -458,15 +458,18 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   display: none !important;
 }
 
-/* Carrusel contenedor (reemplaza la máscara tradicional) */
+/* Contenedor principal de cada sección */
 .projects_holder_index_mask {
   position: relative;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+  border-radius: var(--radio);
 }
 
-/* Oculta la barra de scroll para Chrome, Safari y Opera */
+/* Ocultar scrollbar en Chrome, Safari y Opera */
 .projects_holder_index_mask::-webkit-scrollbar {
   display: none;
 }
@@ -478,18 +481,20 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 }
 
 
+/* Tira de imágenes interna */
 .projects_holder_index {
   display: flex;
   gap: 16px;
+  width: max-content;
 }
 
-/* Tarjeta individual (las 8 imágenes) */
+/* Tarjeta individual */
 .portfolio-item {
   position: relative;
-  flex: 0 0 auto;
-  width: 280px; /* Ancho fijo para cada card del carrusel */
+  flex: 0 0 280px;
   scroll-snap-align: start;
   overflow: hidden;
+  border-radius: var(--radio);
 }
 
 /* 2. Capa de transparencia que cubre TODA la sección en lugar de cada imagen */
@@ -503,6 +508,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   z-index: 2;
   pointer-events: none; /* Permite hacer scroll horizontal debajo del tinte */
 }
+
 
 /* Activa la transparencia al hacer hover en cualquier parte de la sección */
 .projects_holder_index_mask:hover::before {
