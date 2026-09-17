@@ -558,7 +558,6 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 /* Botón "Leer más" estático */
 .portfolio-item .feature_holder_icons {
   position: absolute;
-  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
