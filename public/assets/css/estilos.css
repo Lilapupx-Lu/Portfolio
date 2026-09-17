@@ -273,6 +273,7 @@ nav.mobile_menu.open{display:block}
   background-color: #4dc1e7;align-items:center;padding:10px}
   .portfolio-section-h2-novamd{
   background-color: #750137;align-items:center;padding:10px}
+  .portfolio-section-h2-client{background-color: var(--vino)}
 
   .logos-sections{height:40px;width: auto;margin:auto}
 
