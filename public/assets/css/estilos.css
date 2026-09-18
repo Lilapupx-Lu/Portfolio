@@ -390,7 +390,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 
 /* Tarjeta individual */
 .portfolio-item {
-  flex: 0 0 calc((100% - (7 * 20px)) / 8);
+  flex: 0 0 240px;
   position: relative;
   overflow: hidden;
   background: var(--negro);
@@ -400,7 +400,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
 
 .projects_holder_index_mask .portfolio-item,
 .projects_holder_index_mask_client .portfolio-item {
-  flex: 0 0 calc((100% - (7 * 20px)) / 8);
+  flex: 0 0 240px;
   position: relative;
   border-radius: var(--radio);
 }
