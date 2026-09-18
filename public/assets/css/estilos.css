@@ -496,8 +496,21 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   scrollbar-width: none;  /* Firefox */
 }
 
+.projects_holder_index_mask-client {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 /* Tarjeta individual SOLO dentro del carrusel del index */
 .projects_holder_index_mask .portfolio-item {
+  position: relative;
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  overflow: hidden;
+  border-radius: var(--radio);
+}
+
+.projects_holder_index_mask-client .portfolio-item {
   position: relative;
   flex: 0 0 280px;
   scroll-snap-align: start;
