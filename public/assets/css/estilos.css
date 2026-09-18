@@ -682,11 +682,13 @@ footer{padding:0}
 
   .footer_top{padding:48px 20px 40px}
   .footer_main{gap:26px}
-  .footer_contact_group{gap:4px 28px;padding: 20px 100px 0}
+  .footer_contact_group { gap:4px 28px;padding: 20px 0px 0;}
   .footer_social a{padding:6px;display:inline-flex}
 
   #back_to_top{right:16px;bottom:16px}
 }
+@media (max-width:450px){
+.Header_Text{display: none;}}
 
 @supports (padding:max(0px)){
   @media (max-width:1000px){#back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}}
