@@ -355,7 +355,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   display: flex;
   gap: 20px;
   width: calc(175% + 20px);
-  transition: transform 20s;
+  transition: transform 15s;
 }
 
 .projects_holder{
@@ -623,9 +623,15 @@ footer{padding:0}
   .projects_holder{grid-template-columns:repeat(4,1fr)}
   .projects_holder_index_mask:hover .projects_holder_index,
   .projects_holder_index_mask_client:hover .projects_holder_index {
-    transform: none;
+    transform: translateX(-35%);
   }
-  .projects_holder_index {
+
+  
+  .projects_holder_index_mask .portfolio-item,
+  .projects_holder_index_mask_client .portfolio-item {
+    flex: 0 0 200px; }
+
+ .projects_holder_index {
     width: max-content;
   }
   .portfolio-item {
@@ -686,77 +692,35 @@ footer{padding:0}
   .footer_social a{padding:6px;display:inline-flex}
 
   #back_to_top{right:16px;bottom:16px}
-  .category-main-h1 {line-height: 0.75;
+  .category-main-h1 {line-height: 0.75;}
 
-.projects_holder {grid-template-columns: repeat(4, 1fr);}
+  .projects_holder{grid-template-columns: repeat(4, 1fr);}
+
+.projects_holder_index_mask .portfolio-item,
+  .projects_holder_index_mask_client .portfolio-item {flex: 0 0 160px;}
+
+.projects_holder_index_mask::before {background: rgba(249, 247, 247, 0.7);}
+
+  .index-section-btn .qbutton {padding: 0 24px; height: 36px; line-height: 34px; font-size: 12px;}
 }
+
+
+
 @media (max-width:490px){
 .Header_Text{display: none;}
-.category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}}
+.category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}
 .projects_holder {grid-template-columns: repeat(2, 1fr);}
 
-@supports (padding:max(0px)){
-  @media (max-width:1000px){#back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}}
-}
-
-/* ---------- MEDIA QUERIES PARA LA GALERÍA ---------- */
-
-/* Tablets (1000px o menos) */
-@media (max-width: 1000px) {
-  /* Mantiene la ventana de la máscara visible sin cortar la animación */
-  .projects_holder_index_mask,
-  .projects_holder_index_mask_client {
-    overflow-x: auto; /* Permite desplazamiento táctil si no se usa mouse */
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Ajusta el ancho de las tarjetas para pantallas medianas */
-  .projects_holder_index_mask .portfolio-item,
-  .projects_holder_index_mask_client .portfolio-item {
-    flex: 0 0 200px; /* Tamaño fijo adaptado para tablet */
-  }
-
-  /* Mantiene la tira lo suficientemente ancha para albergar los elementos */
-  .projects_holder_index {
-    width: max-content;
-  }
-
-  /* Conserva la velocidad del desplazamiento hover */
-  .projects_holder_index_mask:hover .projects_holder_index,
-  .projects_holder_index_mask_client:hover .projects_holder_index {
-    transform: translateX(-35%);
-  }
-}
-
-/* Celulares (768px o menos) */
-@media (max-width: 768px) {
-  .projects_holder_index_mask .portfolio-item,
-  .projects_holder_index_mask_client .portfolio-item {
-    flex: 0 0 160px; /* Tamaño reducido para pantallas pequeñas */
-  }
-
-  /* En móviles, la capa de opacidad y el botón permanecen activos */
-  .projects_holder_index_mask::before {
-    background: rgba(249, 247, 247, 0.7);
-  }
-
-  /* Ajuste de escala para el botón 'Leer más' en pantallas chicas */
-  .index-section-btn .qbutton {
-    padding: 0 24px;
-    height: 36px;
-    line-height: 34px;
-    font-size: 12px;
-  }
-}
-
-/* Pantallas muy pequeñas (480px o menos) */
-@media (max-width: 480px) {
-  .projects_holder_index_mask .portfolio-item,
+.projects_holder_index_mask .portfolio-item,
   .projects_holder_index_mask_client .portfolio-item {
     flex: 0 0 130px; /* Tamaño compacto para smartphones estrechos */
   }
 
   .projects_holder_index {
     gap: 12px; /* Reduce la separación entre tarjetas */
-  }
+  }}
+
+
+@supports (padding:max(0px)){
+  @media (max-width:1000px){#back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}}
 }
