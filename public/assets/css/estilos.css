@@ -469,8 +469,17 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   pointer-events: auto;
 }
 
+.projects_holder_index_mask_client:hover .index-section-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Desactiva los overlays individuales ÚNICAMENTE dentro de los carruseles del index */
 .projects_holder_index_mask .portfolio-item .overlay {
+  display: none !important;
+}
+
+.projects_holder_index_mask_client .portfolio-item .overlay {
   display: none !important;
 }
 
@@ -485,8 +494,22 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   border-radius: var(--radio);
 }
 
+.projects_holder_index_mask_client {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+  border-radius: var(--radio);
+}
+
 /* Ocultar scrollbar en Chrome, Safari y Opera */
 .projects_holder_index_mask::-webkit-scrollbar {
+  display: none;
+}
+
+.projects_holder_index_mask_client::-webkit-scrollbar {
   display: none;
 }
 
