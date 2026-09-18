@@ -358,13 +358,17 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   display: none;
 }
 
-/* Tira interna con las tarjetas */
+/* Tira interna con las tarjetas: el contenido está duplicado en el HTML
+   (mismo set de imágenes dos veces seguidas), así que el ancho real de
+   la pista es "el contenido que hay" (max-content) y no un porcentaje
+   inventado del contenedor. translateX(-50%) mueve exactamente UN set
+   completo -> cuando la copia duplicada queda donde empezó el original,
+   el loop reinicia sin salto, pixel a pixel. */
 .projects_holder_index {
   display: flex;
   gap: 20px;
   width: max-content;
-  width: calc(175% + 20px);
-animation: carruselLoop 15s linear infinite;
+  animation: carruselLoop 16s linear infinite;
   touch-action: pan-y;
 }
 
@@ -383,11 +387,6 @@ animation: carruselLoop 15s linear infinite;
   gap:20px;
 }
 
-/* Animación HOVER en PC: desliza la tira a la izquierda */
-.projects_holder_index_mask:hover .projects_holder_index,
-.projects_holder_index_mask_client:hover .projects_holder_index {
-  transform: translateX(calc(-50% + 10px));
-}
 
 /* Tarjeta individual */
 .portfolio-item {
@@ -652,9 +651,6 @@ footer{padding:0}
   .projects_holder_index_mask_client .portfolio-item {
     flex: 0 0 200px; }
 
- .projects_holder_index {
-    width: max-content;
-  }
   .portfolio-item {
     flex: 0 0 240px;
   }
