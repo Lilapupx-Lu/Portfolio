@@ -705,7 +705,7 @@ footer{padding:0}
 }
 .portfolio-section-h2-client{margin: 20px}
 .portfolio-section-h2{margin: 20px}
-
+.portfolio-client{font-size: 24px;}
 
 @media (max-width:490px){
 .Header_Text{display: none;}
