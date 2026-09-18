@@ -637,6 +637,14 @@ footer{padding:0}
     transform: translateX(-35%);
   }
 
+  /* En mobile el scroll es táctil manual: apagamos la animación en loop
+     (si sigue corriendo, pelea contra el gesto del dedo frame a frame)
+     y permitimos el gesto horizontal, que touch-action:pan-y bloqueaba */
+  .projects_holder_index {
+    animation: none;
+    touch-action: pan-x;
+  }
+
   
   .projects_holder_index_mask .portfolio-item,
   .projects_holder_index_mask_client .portfolio-item {
@@ -667,8 +675,9 @@ footer{padding:0}
 
   .category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}
 
-  .portfolio-item .overlay{opacity:0;background:linear-gradient(to top,rgba(11,11,11,.96) 0%,rgba(11,11,11,.92) 30%,rgba(11,11,11,0) 62%);justify-content:flex-end;gap:12px}
-  .portfolio-item .feature_holder_icons{display:none}
+  /* En mobile no queremos overlay ni gradiente: la imagen se ve directa
+     y se abre con el dedo (el link ahora está en .image_holder, ver HTML) */
+  .portfolio-item .overlay{display:none}
   .portfolio-item .portfolio_title{font-size:14px;line-height:20px}
 
   .filter_holder{padding-bottom:34px}
@@ -736,15 +745,11 @@ footer{padding:0}
     flex: 0 0 130px; /* Tamaño compacto para smartphones estrechos */
   }
 
-.projects_holder_index {
-    transform: none !important;
-    transition: none !important;
-  }
-
 .projects_holder_index_mask,
   .projects_holder_index_mask_client {
-    overflow: hidden !important;
-    touch-action: pan-y;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
 
 .projects_holder_index_mask .index-section-btn {
