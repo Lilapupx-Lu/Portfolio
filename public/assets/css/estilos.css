@@ -344,6 +344,14 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   position: relative;
 }
 
+/* cursor:pointer en un div (no-link) hace que iOS Safari reconozca el
+   elemento como interactivo y dispare :active/:hover de forma confiable
+   al tocarlo; sin esto, WebKit a veces ignora el tap en elementos no
+   nativamente clickeables */
+.projects_holder_index_mask {
+  cursor: pointer;
+}
+
 /* Ocultar scrollbars */
 .projects_holder_index_mask::-webkit-scrollbar,
 .projects_holder_index_mask_client::-webkit-scrollbar {
@@ -496,6 +504,14 @@ animation: carruselLoop 15s linear infinite;
   pointer-events: auto;
 }
 
+/* Equivalente táctil del hover: al tocar con el dedo, el botón aparece
+   estático en su lugar mientras la animación del carrusel sigue de fondo */
+.projects_holder_index_mask:active .index-section-btn,
+.projects_holder_index_mask:focus-within .index-section-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Desactiva los overlays individuales dentro de los carruseles */
 .projects_holder_index_mask .portfolio-item .overlay,
 .projects_holder_index_mask_client .portfolio-item .overlay {
@@ -515,6 +531,11 @@ animation: carruselLoop 15s linear infinite;
 }
 
 .projects_holder_index_mask:hover::before {
+  opacity: 1;
+}
+
+.projects_holder_index_mask:active::before,
+.projects_holder_index_mask:focus-within::before {
   opacity: 1;
 }
 
@@ -625,38 +646,8 @@ footer{padding:0}
   .about_grid{gap:40px}
   .footer_contact_group{padding: 20px 200px 0}
 
-  /* Ajustes carrusel en tablets/móviles: scroll táctil horizontal */
-  .projects_holder_index_mask,
-  .projects_holder_index_mask_client {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
   .projects_holder{grid-template-columns:repeat(4,1fr)}
-  .projects_holder_index_mask:hover .projects_holder_index,
-  .projects_holder_index_mask_client:hover .projects_holder_index {
-    transform: translateX(-35%);
-  }
 
-  /* En mobile el scroll es táctil manual: apagamos la animación en loop
-     (si sigue corriendo, pelea contra el gesto del dedo frame a frame)
-     y permitimos el gesto horizontal, que touch-action:pan-y bloqueaba */
-  .projects_holder_index {
-    animation: none;
-    touch-action: pan-x;
-  }
-
-  /* El velo y el botón "Leer más" dependen de :hover, que en touch no es
-     confiable y además genera un glitch visual (quedan "pegados" o van
-     atrasados) al hacer scroll táctil sobre un contenedor con
-     -webkit-overflow-scrolling:touch. Cada sección ya tiene su propio
-     link en el título, así que en mobile los sacamos directamente. */
-  .projects_holder_index_mask::before,
-  .projects_holder_index_mask_client::before,
-  .projects_holder_index_mask .index-section-btn {
-    display: none !important;
-  }
-
-  
   .projects_holder_index_mask .portfolio-item,
   .projects_holder_index_mask_client .portfolio-item {
     flex: 0 0 200px; }
@@ -754,13 +745,6 @@ footer{padding:0}
 .projects_holder_index_mask .portfolio-item,
   .projects_holder_index_mask_client .portfolio-item {
     flex: 0 0 130px; /* Tamaño compacto para smartphones estrechos */
-  }
-
-.projects_holder_index_mask,
-  .projects_holder_index_mask_client {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
   }
 
 .projects_holder_index {
