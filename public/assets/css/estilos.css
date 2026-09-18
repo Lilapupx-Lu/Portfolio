@@ -694,7 +694,7 @@ footer{padding:0}
   #back_to_top{right:16px;bottom:16px}
   .category-main-h1 {line-height: 0.75;}
 
-  .projects_holder{grid-template-columns: repeat(4, 1fr);}
+  .projects_holder{grid-template-columns: repeat(3, 1fr);}
 
 .projects_holder_index_mask .portfolio-item,
   .projects_holder_index_mask_client .portfolio-item {flex: 0 0 160px;}
