@@ -620,7 +620,7 @@ footer{padding:0}
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .projects_holder{grid-template-columns:repeat(5,1fr)}
+  .projects_holder{grid-template-columns:repeat(4,1fr)}
   .projects_holder_index_mask:hover .projects_holder_index,
   .projects_holder_index_mask_client:hover .projects_holder_index {
     transform: none;
@@ -690,10 +690,10 @@ footer{padding:0}
 
 .projects_holder {grid-template-columns: repeat(4, 1fr);}
 }
-@media (max-width:450px){
+@media (max-width:490px){
 .Header_Text{display: none;}
 .category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}}
-.projects_holder {grid-template-columns: repeat(3, 1fr);}
+.projects_holder {grid-template-columns: repeat(2, 1fr);}
 
 @supports (padding:max(0px)){
   @media (max-width:1000px){#back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}}
