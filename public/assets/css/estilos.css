@@ -654,6 +654,8 @@ footer{padding:0}
   .header_inner{grid-template-columns:1fr 1fr;}
   .portfolio-section-h2{margin:20px 60px 20px 60px;}
 
+  .category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}
+
   .portfolio-item .overlay{opacity:1;background:linear-gradient(to top,rgba(11,11,11,.96) 0%,rgba(11,11,11,.92) 30%,rgba(11,11,11,0) 62%);justify-content:flex-end;gap:12px}
   .portfolio-item .feature_holder_icons{display:none}
   .portfolio-item .portfolio_title{font-size:14px;line-height:20px}
@@ -709,7 +711,6 @@ footer{padding:0}
 
 @media (max-width:490px){
 .Header_Text{display: none;}
-.category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}
 .projects_holder {grid-template-columns: repeat(2, 1fr);}
 
 .projects_holder_index_mask .portfolio-item,
