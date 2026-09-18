@@ -161,6 +161,7 @@ main{
 
 ::selection{background:var(--vino);color:white}
 img{max-width:100%;display:block}
+.portfolio-client{color:white;font-family:'Fraunces';font-size:28px;font-weight:40px;}
 .excepciones{color:white;text-decoration:none;transition:color .2s ease;}
 .excepciones:hover{color:yellow}
 a:not(.excepciones){color:var(--negro);text-decoration:none;transition:color .2s ease;}
@@ -273,7 +274,7 @@ nav.mobile_menu.open{display:block}
   background-color: #4dc1e7;align-items:center;padding:10px}
   .portfolio-section-h2-novamd{
   background-color: #750137;align-items:center;padding:10px}
-  .portfolio-section-h2-client{background-color: var(--vino)}
+  .portfolio-section-h2-client{background-color: var(--vino);text-align: center;}
 
   .logos-sections{height:40px;width: auto;margin:auto}
 
