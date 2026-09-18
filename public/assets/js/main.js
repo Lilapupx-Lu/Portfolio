@@ -41,4 +41,22 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+document.addEventListener('DOMContentLoaded', () => {
+  // Verificamos si es un dispositivo móvil/touch
+  const isMobile = window.matchMedia("(max-width: 768px)").matches || 'ontouchstart' in window;
+
+  if (isMobile) {
+    // Seleccionamos las imágenes del carrusel/galería
+    const portfolioImages = document.querySelectorAll('.portfolio-item .image_holder img');
+
+    portfolioImages.forEach(img => {
+      img.style.cursor = 'pointer'; // Opcional: cambia el cursor
+      img.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.open(img.src, '_blank');
+      });
+    });
+  }
+});
+
 })();
