@@ -274,7 +274,7 @@ background-color: #89c05f;padding:10px}
 background-color: #4dc1e7;align-items:center;padding:10px}
 .portfolio-section-h2-novamd{
 background-color: #750137;align-items:center;padding:10px}
-.portfolio-section-h2-client{background-color: var(--vino);text-align: center;}
+.portfolio-section-h2-client{background-color: var(--vino);text-align: center;margin: 20px 60px 20px 60px;}
 
 .logos-sections{height:40px;width: auto;margin:auto}
 
