@@ -260,7 +260,7 @@ nav.mobile_menu.open{display:block}
 
 /* ---------- secciones ---------- */
 .seccion-servicios{margin:0;padding:0 20px 40px 20px}
-.portfolio-section-h2,.portfolio-section-h2-bugmd,.portfolio-section-h2-shameless,.portfolio-section-h2-novamd{
+.portfolio-section-h2,.portfolio-section-h2-bugmd,.portfolio-section-h2-shameless,.portfolio-section-h2-novamd,.portfolio-section-h2-client{
   margin:60px auto 60px auto;border-radius: var(--radio)}
 
 .portfolio-section-h2{
