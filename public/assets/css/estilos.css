@@ -175,7 +175,7 @@ h5{font-family:'Poppins',sans-serif;font-size:18px;line-height:24px;font-weight:
 p{margin:0 0 18px}
 .Header_Text{margin:0 18px 0}
 .about_text{margin-top: 10px}
-.index-subheadline{padding:5px 0 20px 0;font-size:15px; color:var(--vino);letter-spacing:1.6px;text-align: center;
+.index-subheadline{padding:5px 0 20px 0;font-size:20px; color:var(--vino);letter-spacing:1.6px;text-align: center;
   text-transform:uppercase;font-family: 'Poppins';}
 .Index-main-h1{color: var(--negro);font-size:65px;line-height: 0.75}
 .category-main-h1{color: var(--negro);font-size:65px}
@@ -710,6 +710,11 @@ footer{padding:0}
 .portfolio-client{font-size: 24px;}
 
 @media (max-width:490px){
+  .category-main-h1 {font-size: 50px; }
+.index-subheadline {
+    line-height: 1.2;
+    padding: 20px 0 20px 0;
+    font-size: 20px;}
 .Header_Text{display: none;}
 .projects_holder {grid-template-columns: repeat(2, 1fr);}
 
@@ -718,6 +723,27 @@ footer{padding:0}
     flex: 0 0 130px; /* Tamaño compacto para smartphones estrechos */
   }
 
+.projects_holder_index {
+    transform: none !important;
+    transition: none !important;
+  }
+
+.projects_holder_index_mask,
+  .projects_holder_index_mask_client {
+    overflow: hidden !important;
+    touch-action: pan-y;
+  }
+
+.projects_holder_index_mask .index-section-btn {
+    pointer-events: auto; /* Permite recibir clics/taps directamente */
+  }
+
+  .projects_holder_index_mask:active .index-section-btn,
+  .projects_holder_index_mask:focus-within .index-section-btn {
+    opacity: 1;
+  }
+
+  
   .projects_holder_index {
     gap: 12px; /* Reduce la separación entre tarjetas */
   }}
