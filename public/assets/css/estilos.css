@@ -177,7 +177,7 @@ p{margin:0 0 18px}
 .about_text{margin-top: 10px}
 .index-subheadline{padding:5px 0 20px 0;font-size:15px; color:var(--vino);letter-spacing:1.6px;text-align: center;
   text-transform:uppercase;font-family: 'Poppins';}
-.Index-main-h1{color: var(--negro);font-size:65px}
+.Index-main-h1{color: var(--negro);font-size:65px;line-height: 0.75}
 .category-main-h1{color: var(--negro);font-size:65px}
 .category-subheadline{padding:5px 0 20px 0;font-size:20px; color:var(--vino);letter-spacing:1.6px;
   text-transform:uppercase;font-family: 'Poppins';}
@@ -656,7 +656,7 @@ footer{padding:0}
 
   .category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}
 
-  .portfolio-item .overlay{opacity:1;background:linear-gradient(to top,rgba(11,11,11,.96) 0%,rgba(11,11,11,.92) 30%,rgba(11,11,11,0) 62%);justify-content:flex-end;gap:12px}
+  .portfolio-item .overlay{opacity:0;background:linear-gradient(to top,rgba(11,11,11,.96) 0%,rgba(11,11,11,.92) 30%,rgba(11,11,11,0) 62%);justify-content:flex-end;gap:12px}
   .portfolio-item .feature_holder_icons{display:none}
   .portfolio-item .portfolio_title{font-size:14px;line-height:20px}
 
@@ -694,7 +694,7 @@ footer{padding:0}
   .footer_social a{padding:6px;display:inline-flex}
 
   #back_to_top{right:16px;bottom:16px}
-  .category-main-h1 {line-height: 0.75;}
+  .category-main-h1 {line-height: 0.75; font-size: 65px;}
 
   .projects_holder{grid-template-columns: repeat(3, 1fr);}
 
