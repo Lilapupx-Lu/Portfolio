@@ -687,10 +687,13 @@ footer{padding:0}
 
   #back_to_top{right:16px;bottom:16px}
   .category-main-h1 {line-height: 0.75;
+
+.projects_holder {grid-template-columns: repeat(4, 1fr);}
 }
 @media (max-width:450px){
 .Header_Text{display: none;}
 .category-subheadline {line-height: 1.2;padding: 20px 0 20px 0;}}
+.projects_holder {grid-template-columns: repeat(3, 1fr);}
 
 @supports (padding:max(0px)){
   @media (max-width:1000px){#back_to_top{bottom:max(16px,env(safe-area-inset-bottom))}}
