@@ -355,7 +355,7 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   display: flex;
   gap: 20px;
   width: calc(175% + 20px);
-  transition: transform 30s;
+  transition: transform 20s;
 }
 
 .projects_holder{
