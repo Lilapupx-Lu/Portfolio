@@ -370,16 +370,20 @@ hr{margin:20px auto 40px auto; max-width: 90%; background-color: var(--vino);hei
   width: max-content;
   animation: carruselLoop 16s linear infinite;
   touch-action: pan-y;
+  will-change: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes carruselLoop {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
+
 
 .projects_holder{
   display:grid;
