@@ -645,6 +645,17 @@ footer{padding:0}
     touch-action: pan-x;
   }
 
+  /* El velo y el botón "Leer más" dependen de :hover, que en touch no es
+     confiable y además genera un glitch visual (quedan "pegados" o van
+     atrasados) al hacer scroll táctil sobre un contenedor con
+     -webkit-overflow-scrolling:touch. Cada sección ya tiene su propio
+     link en el título, así que en mobile los sacamos directamente. */
+  .projects_holder_index_mask::before,
+  .projects_holder_index_mask_client::before,
+  .projects_holder_index_mask .index-section-btn {
+    display: none !important;
+  }
+
   
   .projects_holder_index_mask .portfolio-item,
   .projects_holder_index_mask_client .portfolio-item {
@@ -752,19 +763,7 @@ footer{padding:0}
     touch-action: pan-x;
   }
 
-.projects_holder_index_mask .index-section-btn {
-    pointer-events: auto; /* Permite recibir clics/taps directamente */
-  }
-
-
-  .projects_holder_index_mask:active::before,
-  .projects_holder_index_mask:focus-within::before,
-  .projects_holder_index_mask:active .index-section-btn,
-  .projects_holder_index_mask:focus-within .index-section-btn {
-    opacity: 1;
-  }
-  
-  .projects_holder_index {
+.projects_holder_index {
     gap: 12px; /* Reduce la separación entre tarjetas */
   }
 
